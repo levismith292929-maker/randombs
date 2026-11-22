@@ -20,7 +20,7 @@
         "item": "pet1"
       },
       "minecraft:custom_name": {
-        "text": "Endermite",
+        "text": "Enderman",
         "italic": false
       },
       "minecraft:enchantment_glint_override": true,
