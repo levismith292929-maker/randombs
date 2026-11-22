@@ -37,7 +37,8 @@
       },
       "custom_data": {
         "item": "necron"
-      }
+      },
+      "minecraft:unbreakable": {}
     },
     "count": 1
   }
