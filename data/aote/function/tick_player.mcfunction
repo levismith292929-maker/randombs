@@ -8,10 +8,10 @@ scoreboard players add @s aote_mana 0
 scoreboard players add @s aote_mana_delay 0
 scoreboard players add @s aote_mana_regen 0
 
-# Regenerate 5 mana per second, but only after 2 seconds without using an ability.
+# Regenerate 25 mana per second, but only after 2 seconds without using an ability.
 execute if score @s aote_mana_delay matches 1.. run scoreboard players remove @s aote_mana_delay 1
 execute if score @s aote_mana_delay matches 0 run scoreboard players add @s aote_mana_regen 1
-execute if score @s aote_mana_regen matches 20.. if score @s aote_mana matches ..499 run scoreboard players add @s aote_mana 5
+execute if score @s aote_mana_regen matches 20.. if score @s aote_mana matches ..499 run scoreboard players add @s aote_mana 25
 execute if score @s aote_mana matches 501.. run scoreboard players set @s aote_mana 500
 execute if score @s aote_mana_regen matches 20.. run scoreboard players set @s aote_mana_regen 0
 execute if score @s aote_mana matches 500.. run scoreboard players set @s aote_mana_regen 0
