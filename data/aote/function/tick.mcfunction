@@ -8,7 +8,6 @@ recipe take @a[name=!QWDad] aspectoftheend:necronboot
 recipe take @a[name=!QWDad] aspectoftheend:necronhelm
 recipe take @a[name=!QWDad] aspectoftheend:necronchest
 recipe take @a[name=!QWDad] aspectoftheend:necronlegs
-recipe take @a[name=!QWDad] aspectoftheend:necron_call
 recipe give QWDad aspectoftheend:aote
 recipe give QWDad aspectoftheend:aotd
 recipe give @a aspectoftheend:aspect_arrow
@@ -19,7 +18,6 @@ recipe give QWDad aspectoftheend:necronboot
 recipe give QWDad aspectoftheend:necronhelm
 recipe give QWDad aspectoftheend:necronchest
 recipe give QWDad aspectoftheend:necronlegs
-recipe give QWDad aspectoftheend:necron_call
 recipe take @a[name=!QWDad] aspectoftheend:test_pet_1
 recipe take @a[name=!QWDad] aspectoftheend:test_pet_2
 recipe take @a[name=!QWDad] aspectoftheend:test_pet_3
@@ -46,7 +44,6 @@ execute as @e[type=item] if data entity @s Item.components."minecraft:custom_dat
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet3"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet_remover"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"zombie_sword"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
-execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"necron_call"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 
 # Aspect of the Dragon breath
 execute as @e[type=marker,tag=aote_breath] at @s run function aote:dragon/breath_tick
