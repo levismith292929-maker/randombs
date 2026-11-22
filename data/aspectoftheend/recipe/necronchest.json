@@ -29,7 +29,13 @@
         "slot": "chest",
         "asset_id": "minecraft:leather"
       },
-      "minecraft:dyed_color": 15155516
+      "minecraft:dyed_color": 15155516,
+      "item_model": "leather_chestplate",
+      "custom_name": {
+        "text": "Necron Chestplate",
+        "color": "#ffd000",
+        "italic": false
+      }
     },
     "count": 1
   }

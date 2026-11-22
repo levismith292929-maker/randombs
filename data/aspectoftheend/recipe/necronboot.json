@@ -25,10 +25,16 @@
       },
       "minecraft:enchantment_glint_override": false,
       "minecraft:equippable": {
-        "slot": "chest",
+        "slot": "feet",
         "asset_id": "minecraft:leather"
       },
-      "minecraft:dyed_color": 15167548
+      "minecraft:dyed_color": 15167548,
+      "item_model": "leather_boots",
+      "custom_name": {
+        "text": "Necron Boots",
+        "color": "#ffd000",
+        "italic": false
+      }
     },
     "count": 1
   }

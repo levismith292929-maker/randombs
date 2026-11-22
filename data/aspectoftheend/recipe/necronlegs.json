@@ -26,10 +26,16 @@
       },
       "minecraft:enchantment_glint_override": false,
       "minecraft:equippable": {
-        "slot": "chest",
+        "slot": "legs",
         "asset_id": "minecraft:leather"
       },
-      "minecraft:dyed_color": 15162428
+      "minecraft:dyed_color": 15162428,
+      "item_model": "leather_leggings",
+      "custom_name": {
+        "text": "Necron Leggings",
+        "color": "#ffd000",
+        "italic": false
+      }
     },
     "count": 1
   }
