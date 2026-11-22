@@ -42,10 +42,6 @@ Right-click (Wither Shield): 5 seconds of Resistance I plus Absorption III (6 he
 
 All four swords (Aspect of the End, Aspect of the Dragon, Hyperion, Astraea) have lore explaining how to use them. Lore comes from the recipe result, so older copies need to be crafted again.
 
-THE TERMINATOR
-Looks like a bow (it is a chain command block, which can't be placed in survival, with the bow item model and no glint and the same right-click setup as the other two items), custom_data={item:terminator}. Recipe aspectoftheend:terminator: iron ingots around a bow (jukebox shape); the bow is just an ingredient. Items made before v26 (real bows, or the v25 stick) and no longer work; craft a new one.
-Right-click: instantly fires 3 arrows (the middle one straight, the others 10 degrees to each side), no drawing and no ammo needed. No cooldown: holding right-click fires 3 arrows every tick (20 volleys per second). The arrows glow, are on fire, are crits, and deal 5.5 base damage (same as the old power 6). They fly at 3 blocks per tick, like a fully drawn bow. Only QWDad can use it.
-Arrows home in on living mobs within 40 blocks that arrows can hit (never QWDad; not items, armor stands, projectiles, endermen, etc. - see tag aote:non_targets). Homing only starts 0.3 seconds (6 ticks) after the arrow is fired; before that it flies straight.
-Targeting: the target is re-picked every tick. Mobs that are already dead or dying are ignored. Mobs that were just hurt are skipped while any unhurt mob is in range, so extra multishot arrows spread out to other enemies instead of piling onto one. If the only mobs left were just hurt, the arrow aims at the nearest one.
-Arrows never stop homing: if their target dies, they re-pick the next nearest mob on the next tick. If an arrow gets stuck in a block it is pushed 1.5 blocks per tick toward the target until it is free.
-Arrows disappear on hit (PierceLevel 0). As a safety net, an arrow that already had a target is also removed if (a) every living mob in range is gone, or (b) the only mobs left were hurt this tick or last and one is within 5 blocks (the arrow hit, bounced or passed through). They give up after 10 seconds. 
+NECRON'S SCYTHE
+Custom weapon with custom_data={item:necrons_scythe}. Recipe aspectoftheend:necrons_scythe: iron ingots around a bow. The result is a chain command block using the bow item model, named "Necron's Scythe", and configured as a right-click item.
+Right-click: creates a diagonal sweep-attack particle slash 3 blocks ahead in the direction QWDad is looking. Everything in the 3-block attack zone (a 3-block-long, 3-block-wide/deep spherical area centered 1.5 blocks ahead) except QWDad takes 20 magic damage credited to QWDad. 5-second (100 tick) cooldown. Only QWDad can use it.
