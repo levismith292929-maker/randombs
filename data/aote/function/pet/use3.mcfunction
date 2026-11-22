@@ -1,5 +1,5 @@
 advancement revoke @s only aote:use_pet3
-clear @s minecraft:player_head[minecraft:custom_data={item:"pet3"}] 1
+clear @s minecraft:command_block[minecraft:item_model="minecraft:player_head",minecraft:custom_data={item:"pet3"}] 1
 execute unless entity @s[name=QWDad] run return 0
 function aote:pet/remove_silent
 scoreboard players set @s aote_pet_type 3
