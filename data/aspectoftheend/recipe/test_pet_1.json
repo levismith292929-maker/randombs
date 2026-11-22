@@ -41,13 +41,18 @@
           "italic": false
         },
         {
-          "text": "Mana Regeneration: 15/sec",
+          "text": "Mana Regeneration: 50/sec",
           "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "Damage: -20%",
+          "color": "red",
           "italic": false
         }
       ],
       "minecraft:profile": {
-        "name": "MHF_Endermite"
+        "name": "MHF_Enderman"
       }
     }
   }
