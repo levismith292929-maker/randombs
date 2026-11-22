@@ -31,8 +31,6 @@ recipe take @a[name=!QWDad] aspectoftheend:pet_remover
 recipe give QWDad aspectoftheend:pet_remover
 recipe take @a[name=!QWDad] aspectoftheend:zombie_sword
 recipe give QWDad aspectoftheend:zombie_sword
-recipe take @a[name=!QWDad] aspectoftheend:all_hell_breaks_loose
-recipe give QWDad aspectoftheend:all_hell_breaks_loose
 # Lock: dropped items snap back to QWDad, and only he can pick them up.
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"aote"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"dragon"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
@@ -47,7 +45,6 @@ execute as @e[type=item] if data entity @s Item.components."minecraft:custom_dat
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet4"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet_remover"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"zombie_sword"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
-execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"all_hell_breaks_loose"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 
 # Aspect of the Dragon breath
 execute as @e[type=marker,tag=aote_breath] at @s run function aote:dragon/breath_tick
@@ -65,5 +62,3 @@ execute as @e[type=marker,tag=aote_orb] at @s run function aote:astraea/orb_tick
 execute as @e[type=marker,tag=necron_scythe_slash] at @s run function aote:necrons_scythe/slash_tick
 
 # Necron's Scythe slash cooldown is handled by tick_player.
-
-execute as @e[type=marker,tag=aote_hell_pillar] at @s run function aote:hell_pillars/tick
