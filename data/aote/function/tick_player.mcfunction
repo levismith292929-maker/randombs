@@ -57,3 +57,6 @@ execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:cus
 
 execute if items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 0 run title @s actionbar {"text":"Zombie Sword: READY","color":"green"}
 execute if items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 1.. run title @s actionbar [{"text":"Zombie Sword: "},{"score":{"name":"@s","objective":"aote_zcd"}},{"text":" ticks","color":"yellow"}]
+
+execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:all_hell_breaks_loose}] if score @s aote_hcd matches 0 run title @s actionbar {"text":"All Hell Breaks Loose: READY","color":"green"}
+execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:all_hell_breaks_loose}] if score @s aote_hcd matches 1.. run title @s actionbar [{"text":"Portal to Hell: "},{"score":{"name":"@s","objective":"aote_hcd"}},{"text":" ticks","color":"yellow"}]
