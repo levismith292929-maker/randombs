@@ -35,6 +35,10 @@ execute as @e[type=item] if data entity @s Item.components."minecraft:custom_dat
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"hyperion"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"astraea"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"necron"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
+execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet1"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
+execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet2"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
+execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet3"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
+execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet_remover"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 
 # Aspect of the Dragon breath
 execute as @e[type=marker,tag=aote_breath] at @s run function aote:dragon/breath_tick
