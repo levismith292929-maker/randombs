@@ -1,5 +1,4 @@
 advancement revoke @s only aote:necron_armor_hit
-execute unless entity @s[name=QWDad] run return 0
 execute unless items entity @s armor.head minecraft:wither_skeleton_skull[minecraft:custom_data~{item:necron}] run return 0
 execute unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run return 0
 execute unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run return 0
