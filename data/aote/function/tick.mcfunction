@@ -44,6 +44,7 @@ execute as @e[type=item] if data entity @s Item.components."minecraft:custom_dat
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet1"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet2"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet3"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
+execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet4"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"pet_remover"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"zombie_sword"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"all_hell_breaks_loose"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
