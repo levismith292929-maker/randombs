@@ -1,3 +1,4 @@
+bossbar remove aote:mana
 scoreboard objectives add aote_steps dummy
 scoreboard objectives add aote_cd dummy
 scoreboard objectives add aote_acd dummy
