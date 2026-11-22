@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "items": [
-            "minecraft:player_head"
+            "minecraft:command_block"
           ],
           "predicates": {
             "minecraft:custom_data": "{item:pet_remover}"
