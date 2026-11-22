@@ -4,6 +4,9 @@ advancement revoke @s only aote:use_dragon
 execute unless entity @s[name=QWDad] run tellraw @s [{"text":"USER NOT FOUND","bold":true,"color":"red"}]
 execute unless entity @s[name=QWDad] run return 0
 
+# Play the Ender Dragon growl only when the ability is ready to activate.
+execute if score @s aote_dcd matches 0 run playsound minecraft:entity.ender_dragon.growl player @a ~ ~ ~ 1 1
+
 # Breath starts at the mouth (eye level, slightly forward) and goes where you look.
 execute if score @s aote_dcd matches 0 anchored eyes positioned ^ ^-0.1 ^0.3 summon minecraft:marker run function aote:dragon/init
 scoreboard players set @s aote_dcd 12
