@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:command_block"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{item:all_hell_breaks_loose}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "aote:hell_pillars/use"
+  }
+}
