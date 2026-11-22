@@ -8,4 +8,5 @@ attribute @s minecraft:attack_damage modifier add aote:pet_damage 0.05 add_multi
 effect give @s minecraft:resistance infinite 0 true
 execute if score @s aote_mana > @s aote_mana_max run scoreboard players operation @s aote_mana = @s aote_mana_max
 execute at @s run summon minecraft:item_display ~ ~0.8 ~ {Tags:["aote_pet"],item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{name:"MHF_Golem"}}},item_display:"fixed",transformation:{scale:[0.5f,0.5f,0.5f]},teleport_duration:3}
+scoreboard players operation @e[type=minecraft:item_display,tag=aote_pet,sort=nearest,limit=1] aote_uid = @s aote_uid
 tellraw @s {"text":"Iron Golem pet activated!","color":"green"}
