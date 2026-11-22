@@ -6,9 +6,11 @@ execute unless entity @s[name=QWDad] run return 0
 
 # Wither Shield: 40 mana, 10-second cooldown.
 execute if score @s aote_acd matches 1.. run return 0
-execute unless score @s aote_mana matches 40.. run tellraw @s {"text":"Not enough mana! (40 required)","color":"aqua"}
-execute unless score @s aote_mana matches 40.. run return 0
-scoreboard players remove @s aote_mana 40
+scoreboard players set @s aote_cost 40
+scoreboard players operation @s aote_cost += @s aote_cost_bonus
+execute unless score @s aote_mana >= @s aote_cost run tellraw @s [{"text":"Not enough mana! ("},{"score":{"name":"@s","objective":"aote_cost"}},{"text":" required)","color":"aqua"}]
+execute unless score @s aote_mana >= @s aote_cost run return 0
+scoreboard players operation @s aote_mana -= @s aote_cost
 scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
 function aote:astraea/shield
