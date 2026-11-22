@@ -27,6 +27,7 @@ execute if score @s aote_mana >= @s aote_mana_max run scoreboard players set @s 
 bossbar set aote:mana players @s
 execute store result bossbar aote:mana max run scoreboard players get @s aote_mana_max
 execute store result bossbar aote:mana value run scoreboard players get @s aote_mana
+bossbar set aote:mana name {"text":"Mana: ","color":"aqua","extra":[{"score":{"name":"QWDad","objective":"aote_mana"}},{"text":"/"},{"score":{"name":"QWDad","objective":"aote_mana_max"}}]}
 scoreboard players add @s aote_cd 0
 scoreboard players add @s aote_acd 0
 scoreboard players add @s aote_dcd 0
