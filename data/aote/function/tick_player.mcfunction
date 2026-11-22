@@ -72,4 +72,63 @@ execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:cus
 
 execute if items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 0 run title @s actionbar {"text":"Zombie Sword: READY","color":"green"}
 execute if items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 1.. run title @s actionbar [{"text":"Zombie Sword: "},{"score":{"name":"@s","objective":"aote_zcd"}},{"text":" ticks","color":"yellow"}]
-execute unless items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aote}] unless items entity @s weapon.mainhand minecraft:repeating_command_block[minecraft:custom_data~{item:hyperion}] unless items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:astraea}] unless items entity @s weapon.mainhand minecraft:netherite_sword[minecraft:custom_data~{item:dragon}] unless items entity @s weapon.mainhand minecraft:netherite_sword[minecraft:custom_data~{item:arrow}] unless items entity @s weapon.mainhand minecraft:chain_command_block[minecraft:custom_data~{item:necrons_scythe}] unless items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] run title @s actionbar [{"text":"Mana: ","color":"aqua"},{"score":{"name":"@s","objective":"aote_mana"}},{"text":"/"},{"score":{"name":"@s","objective":"aote_mana_max"}}]
+execute if score @s aote_uid matches 1 run bossbar set aote:mana_1 players @s
+execute if score @s aote_uid matches 1 store result bossbar aote:mana_1 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 1 store result bossbar aote:mana_1 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 2 run bossbar set aote:mana_2 players @s
+execute if score @s aote_uid matches 2 store result bossbar aote:mana_2 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 2 store result bossbar aote:mana_2 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 3 run bossbar set aote:mana_3 players @s
+execute if score @s aote_uid matches 3 store result bossbar aote:mana_3 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 3 store result bossbar aote:mana_3 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 4 run bossbar set aote:mana_4 players @s
+execute if score @s aote_uid matches 4 store result bossbar aote:mana_4 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 4 store result bossbar aote:mana_4 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 5 run bossbar set aote:mana_5 players @s
+execute if score @s aote_uid matches 5 store result bossbar aote:mana_5 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 5 store result bossbar aote:mana_5 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 6 run bossbar set aote:mana_6 players @s
+execute if score @s aote_uid matches 6 store result bossbar aote:mana_6 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 6 store result bossbar aote:mana_6 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 7 run bossbar set aote:mana_7 players @s
+execute if score @s aote_uid matches 7 store result bossbar aote:mana_7 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 7 store result bossbar aote:mana_7 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 8 run bossbar set aote:mana_8 players @s
+execute if score @s aote_uid matches 8 store result bossbar aote:mana_8 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 8 store result bossbar aote:mana_8 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 9 run bossbar set aote:mana_9 players @s
+execute if score @s aote_uid matches 9 store result bossbar aote:mana_9 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 9 store result bossbar aote:mana_9 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 10 run bossbar set aote:mana_10 players @s
+execute if score @s aote_uid matches 10 store result bossbar aote:mana_10 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 10 store result bossbar aote:mana_10 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 11 run bossbar set aote:mana_11 players @s
+execute if score @s aote_uid matches 11 store result bossbar aote:mana_11 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 11 store result bossbar aote:mana_11 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 12 run bossbar set aote:mana_12 players @s
+execute if score @s aote_uid matches 12 store result bossbar aote:mana_12 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 12 store result bossbar aote:mana_12 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 13 run bossbar set aote:mana_13 players @s
+execute if score @s aote_uid matches 13 store result bossbar aote:mana_13 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 13 store result bossbar aote:mana_13 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 14 run bossbar set aote:mana_14 players @s
+execute if score @s aote_uid matches 14 store result bossbar aote:mana_14 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 14 store result bossbar aote:mana_14 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 15 run bossbar set aote:mana_15 players @s
+execute if score @s aote_uid matches 15 store result bossbar aote:mana_15 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 15 store result bossbar aote:mana_15 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 16 run bossbar set aote:mana_16 players @s
+execute if score @s aote_uid matches 16 store result bossbar aote:mana_16 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 16 store result bossbar aote:mana_16 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 17 run bossbar set aote:mana_17 players @s
+execute if score @s aote_uid matches 17 store result bossbar aote:mana_17 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 17 store result bossbar aote:mana_17 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 18 run bossbar set aote:mana_18 players @s
+execute if score @s aote_uid matches 18 store result bossbar aote:mana_18 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 18 store result bossbar aote:mana_18 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 19 run bossbar set aote:mana_19 players @s
+execute if score @s aote_uid matches 19 store result bossbar aote:mana_19 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 19 store result bossbar aote:mana_19 value run scoreboard players get @s aote_mana
+execute if score @s aote_uid matches 20 run bossbar set aote:mana_20 players @s
+execute if score @s aote_uid matches 20 store result bossbar aote:mana_20 max run scoreboard players get @s aote_mana_max
+execute if score @s aote_uid matches 20 store result bossbar aote:mana_20 value run scoreboard players get @s aote_mana
