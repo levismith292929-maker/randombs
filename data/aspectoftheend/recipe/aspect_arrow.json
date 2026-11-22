@@ -2,57 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "show_notification": true,
   "category": "misc",
-  "pattern": [
-    "ccc",
-    "csc",
-    "ccc"
-  ],
+  "pattern": ["ccc", "csc", "ccc"],
   "key": {
-    "c": [
-      "minecraft:crossbow"
-    ],
-    "s": [
-      "minecraft:diamond_sword"
-    ]
+    "c": ["minecraft:crossbow"],
+    "s": ["minecraft:diamond_sword"]
   },
   "result": {
     "id": "minecraft:netherite_sword",
     "count": 1,
     "components": {
-      "minecraft:custom_data": {
-        "item": "arrow"
-      },
-      "minecraft:custom_name": {
-        "text": "Aspect of the Arrow",
-        "italic": false
-      },
+      "minecraft:custom_data": {"item": "arrow"},
+      "minecraft:custom_name": {"text": "Aspect of the Arrow", "italic": false},
       "minecraft:enchantment_glint_override": true,
-      "minecraft:consumable": {
-        "consume_seconds": 10000,
-        "animation": "none",
-        "has_consume_particles": false
-      },
+      "minecraft:consumable": {"consume_seconds": 10000, "animation": "none", "has_consume_particles": false},
       "minecraft:lore": [
-        {
-          "text": "Ability: Arrow Barrage  RIGHT CLICK",
-          "color": "gold",
-          "italic": false
-        },
-        {
-          "text": "Right-click to rapidly fire 50 arrows in the",
-          "color": "gray",
-          "italic": false
-        },
-        {
-          "text": "direction you look. Fires two arrows per tick",
-          "color": "gray",
-          "italic": false
-        },
-        {
-          "text": "over 25 ticks.",
-          "color": "gray",
-          "italic": false
-        }
+        {"text": "Ability: Arrow Barrage  RIGHT CLICK", "color": "gold", "italic": false},
+        {"text": "Right-click to rapidly fire 50 arrows in the", "color": "gray", "italic": false},
+        {"text": "direction you look. Fires two arrows per tick", "color": "gray", "italic": false},
+        {"text": "over 25 ticks.", "color": "gray", "italic": false},
+        {"text": "Mana Cost: 60", "color": "blue", "italic": false}
       ]
     }
   }
