@@ -3,16 +3,11 @@
   "show_notification": true,
   "category": "misc",
   "pattern": [
-    "iii",
-    "ibi",
-    "iii"
+    "ddd"
   ],
   "key": {
-    "i": [
-      "minecraft:iron_ingot"
-    ],
-    "b": [
-      "minecraft:bow"
+    "d": [
+      "minecraft:dirt"
     ]
   },
   "result": {
@@ -26,7 +21,7 @@
         "text": "Necron's Scythe",
         "italic": false
       },
-      "minecraft:item_model": "minecraft:bow",
+      "minecraft:item_model": "minecraft:diamond_hoe",
       "minecraft:max_stack_size": 1,
       "minecraft:consumable": {
         "consume_seconds": 10000,
