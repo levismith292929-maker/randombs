@@ -1,4 +1,3 @@
-execute unless entity @s[name=QWDad] run return 0
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana 500
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana_max 500
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana_regen_rate 40
@@ -25,10 +24,6 @@ execute if score @s aote_mana_regen matches 20.. if score @s aote_mana < @s aote
 execute if score @s aote_mana > @s aote_mana_max run scoreboard players operation @s aote_mana = @s aote_mana_max
 execute if score @s aote_mana_regen matches 20.. run scoreboard players set @s aote_mana_regen 0
 execute if score @s aote_mana >= @s aote_mana_max run scoreboard players set @s aote_mana_regen 0
-bossbar set aote:mana players @s
-execute store result bossbar aote:mana max run scoreboard players get @s aote_mana_max
-execute store result bossbar aote:mana value run scoreboard players get @s aote_mana
-bossbar set aote:mana name {"text":"Mana: ","color":"aqua","extra":[{"score":{"name":"QWDad","objective":"aote_mana"}},{"text":"/"},{"score":{"name":"QWDad","objective":"aote_mana_max"}}]}
 scoreboard players add @s aote_cd 0
 scoreboard players add @s aote_acd 0
 scoreboard players add @s aote_dcd 0
@@ -57,4 +52,4 @@ execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:cus
 
 execute if items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 0 run title @s actionbar {"text":"Zombie Sword: READY","color":"green"}
 execute if items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 1.. run title @s actionbar [{"text":"Zombie Sword: "},{"score":{"name":"@s","objective":"aote_zcd"}},{"text":" ticks","color":"yellow"}]
-
+execute unless items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aote}] unless items entity @s weapon.mainhand minecraft:repeating_command_block[minecraft:custom_data~{item:hyperion}] unless items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:astraea}] unless items entity @s weapon.mainhand minecraft:netherite_sword[minecraft:custom_data~{item:dragon}] unless items entity @s weapon.mainhand minecraft:netherite_sword[minecraft:custom_data~{item:arrow}] unless items entity @s weapon.mainhand minecraft:chain_command_block[minecraft:custom_data~{item:necrons_scythe}] unless items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] run title @s actionbar [{"text":"Mana: ","color":"aqua"},{"score":{"name":"@s","objective":"aote_mana"}},{"text":"/"},{"score":{"name":"@s","objective":"aote_mana_max"}}]
