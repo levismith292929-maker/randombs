@@ -1,19 +1,19 @@
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aote
-recipe give @s aspectoftheend:aotd
-recipe give @s aspectoftheend:aspect_arrow
-recipe give @s aspectoftheend:necrons_scythe
-recipe give @s aspectoftheend:hyperion
-recipe give @s aspectoftheend:astraea
-recipe give @s aspectoftheend:necronboot
-recipe give @s aspectoftheend:necronhelm
-recipe give @s aspectoftheend:necronchest
-recipe give @s aspectoftheend:necronlegs
-recipe give @s aspectoftheend:test_pet_1
-recipe give @s aspectoftheend:test_pet_2
-recipe give @s aspectoftheend:test_pet_3
-recipe give @s aspectoftheend:iron_golem_pet
-recipe give @s aspectoftheend:pet_remover
-recipe give @s aspectoftheend:zombie_sword
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aotd
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aspect_arrow
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necrons_scythe
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:hyperion
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:astraea
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necronboot
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necronhelm
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necronchest
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necronlegs
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:test_pet_1
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:test_pet_2
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:test_pet_3
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:iron_golem_pet
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:pet_remover
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:zombie_sword
 tag @s add aote_recipes_unlocked
 scoreboard players add #aote_uid_counter aote_uid 0
 execute unless score @s aote_uid matches 1.. run scoreboard players add #aote_uid_counter aote_uid 1
