@@ -3,13 +3,15 @@
   "show_notification": true,
   "category": "misc",
   "pattern": [
-    "fdf"
+    "ccc",
+    "csc",
+    "ccc"
   ],
   "key": {
-    "f": [
-      "minecraft:flint_and_steel"
+    "c": [
+      "minecraft:crossbow"
     ],
-    "d": [
+    "s": [
       "minecraft:diamond_sword"
     ]
   },
