@@ -23,4 +23,4 @@ execute positioned ^0.475 ^-0.823 ^3.0 run particle minecraft:flame ~ ~ ~ 0 0 0 
 execute positioned ^0.672 ^-0.672 ^3.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 normal
 execute positioned ^0.823 ^-0.475 ^3.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 normal
 execute positioned ^0.918 ^-0.246 ^3.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 normal
-execute positioned ^ ^ ^3.0 positioned ~-1.25 ~-1.25 ~-1.25 as @e[dx=2.5,dy=2.5,dz=2.5,type=!minecraft:marker,type=!minecraft:item,type=!minecraft:experience_orb,name=!QWDad,tag=!aote_hit] run function aote:dragon/hit
+execute positioned ^ ^ ^3.0 positioned ~-1.25 ~-1.25 ~-1.25 as @e[dx=2.5,dy=2.5,dz=2.5,type=!minecraft:marker,type=!minecraft:item,type=!minecraft:experience_orb,type=!minecraft:player,tag=!aote_hit] run function aote:dragon/hit
