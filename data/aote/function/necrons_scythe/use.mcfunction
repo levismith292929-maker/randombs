@@ -9,7 +9,7 @@ execute unless entity @s[name=QWDad] run return 0
 execute if score @s aote_tcd matches 1.. run return 0
 scoreboard players set @s aote_tcd 100
 
-# Start a curved end-rod slash three blocks ahead.
+# Start a straight end-rod slash three blocks ahead.
 kill @e[type=marker,tag=necron_scythe_slash]
 execute anchored eyes positioned ^ ^ ^3 run summon minecraft:marker ~ ~ ~ {Tags:["necron_scythe_slash"]}
 scoreboard players set @e[type=marker,tag=necron_scythe_slash,limit=1,sort=nearest] aote_slash_t 0
