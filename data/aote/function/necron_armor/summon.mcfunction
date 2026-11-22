@@ -17,7 +17,7 @@ scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
 scoreboard players set @s aote_ncd 100
 team join aote_necron_guard @s
-execute at @s positioned ^-1 ^ ^ run summon minecraft:wither_skeleton ~ ~ ~ {Tags:["necron_guard"],PersistenceRequired:1b,CanPickUpLoot:0b,DeathLootTable:"minecraft:empty"}
+execute at @s positioned ^-1 ^ ^ run summon minecraft:wither_skeleton ~ ~ ~ {Tags:["necron_guard"],PersistenceRequired:1b,CanPickUpLoot:0b,DeathLootTable:"minecraft:empty",drop_chances:{head:0.0f,chest:0.0f,legs:0.0f,feet:0.0f,mainhand:0.0f,offhand:0.0f}}
 execute at @s positioned ^1 ^ ^ run summon minecraft:wither_skeleton ~ ~ ~ {Tags:["necron_guard"],PersistenceRequired:1b,CanPickUpLoot:0b,DeathLootTable:"minecraft:empty"}
 team join aote_necron_guard @e[type=minecraft:wither_skeleton,tag=necron_guard,distance=..6]
 execute as @e[type=minecraft:wither_skeleton,tag=necron_guard,tag=!necron_guard_equipped,distance=..6] run function aote:necron_armor/equip
