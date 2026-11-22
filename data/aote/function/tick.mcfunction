@@ -48,8 +48,6 @@ execute as @e[type=item] if data entity @s Item.components."minecraft:custom_dat
 # Aspect of the Dragon breath
 execute as @e[type=marker,tag=aote_breath] at @s run function aote:dragon/breath_tick
 
-execute as @e[type=minecraft:item_display,tag=aote_pet] at @a[name=QWDad,limit=1] run tp @s ^0.8 ^0.8 ^-1.2
-execute as @e[type=minecraft:item_display,tag=aote_pet] unless entity @a[name=QWDad,limit=1] run kill @s
 execute as @a at @s run function aote:tick_player
 
 # Aspect of the Arrow volleys
