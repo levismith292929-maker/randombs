@@ -39,7 +39,24 @@
       "custom_data": {
         "item": "necron"
       },
-      "minecraft:unbreakable": {}
+      "minecraft:unbreakable": {},
+      "minecraft:lore": [
+        {
+          "text": "Full Set Bonus: Necron's Guards",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "When hit, summons two armored wither skeletons.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Cooldown: 30 seconds",
+          "color": "blue",
+          "italic": false
+        }
+      ]
     },
     "count": 1
   }
