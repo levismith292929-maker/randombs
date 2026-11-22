@@ -18,6 +18,7 @@ scoreboard objectives add aote_zcd dummy
 scoreboard objectives add aote_zhealth dummy
 scoreboard objectives add aote_zmax dummy
 scoreboard objectives add aote_ncd dummy
+scoreboard objectives add aote_uid dummy
 team add aote_necron_guard
 tellraw @a "Random bullshit I came of with has loaded v1"
 
