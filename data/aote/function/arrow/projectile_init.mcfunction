@@ -17,7 +17,7 @@ data modify entity @s Owner set from entity @p[distance=..2,sort=nearest,limit=1
 execute store result score #ax aote_t run data get entity @s Pos[0] 1000
 execute store result score #ay aote_t run data get entity @s Pos[1] 1000
 execute store result score #az aote_t run data get entity @s Pos[2] 1000
-execute rotated as @e[type=minecraft:marker,tag=aote_arrow_volley,distance=..1,sort=nearest,limit=1] positioned ^ ^ ^3 summon minecraft:marker run function aote:terminator/read
+execute rotated as @e[type=minecraft:marker,tag=aote_arrow_volley,distance=..1,sort=nearest,limit=1] positioned ^ ^ ^3 summon minecraft:marker run function aote:arrow/read
 execute store result entity @s Motion[0] double 0.001 run scoreboard players get #mx aote_t
 execute store result entity @s Motion[1] double 0.001 run scoreboard players get #my aote_t
 execute store result entity @s Motion[2] double 0.001 run scoreboard players get #mz aote_t
