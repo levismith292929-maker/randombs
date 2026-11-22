@@ -36,7 +36,7 @@
           "italic": false
         },
         {
-          "text": "Damage: +15%",
+          "text": "Damage: +40%",
           "color": "blue",
           "italic": false
         },
@@ -46,7 +46,7 @@
           "italic": false
         },
         {
-          "text": "Mana Regeneration: 5/sec",
+          "text": "Mana Regeneration: 10/sec",
           "color": "blue",
           "italic": false
         }
