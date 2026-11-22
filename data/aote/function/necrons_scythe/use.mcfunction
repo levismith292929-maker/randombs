@@ -9,14 +9,10 @@ execute unless entity @s[name=QWDad] run return 0
 execute if score @s aote_tcd matches 1.. run return 0
 scoreboard players set @s aote_tcd 100
 
-# Draw a horizontal end-rod slash from left to right, three blocks ahead.
-execute anchored eyes run particle minecraft:end_rod ^-0.9 ^0 ^3 0 0 0 0 1 normal
-execute anchored eyes run particle minecraft:end_rod ^-0.6 ^0 ^3 0 0 0 0 1 normal
-execute anchored eyes run particle minecraft:end_rod ^-0.3 ^0 ^3 0 0 0 0 1 normal
-execute anchored eyes run particle minecraft:end_rod ^0 ^0 ^3 0 0 0 0 1 normal
-execute anchored eyes run particle minecraft:end_rod ^0.3 ^0 ^3 0 0 0 0 1 normal
-execute anchored eyes run particle minecraft:end_rod ^0.6 ^0 ^3 0 0 0 0 1 normal
-execute anchored eyes run particle minecraft:end_rod ^0.9 ^0 ^3 0 0 0 0 1 normal
+# Start a curved end-rod slash three blocks ahead.
+kill @e[type=marker,tag=necron_scythe_slash]
+execute anchored eyes positioned ^ ^ ^3 run summon minecraft:marker ~ ~ ~ {Tags:["necron_scythe_slash"]}
+scoreboard players set @e[type=marker,tag=necron_scythe_slash,limit=1,sort=nearest] aote_slash_t 0
 
 # Scan from the player's body height, not eye height.
 # Entity distance is measured from its feet, so scanning at eye height missed zombies.
