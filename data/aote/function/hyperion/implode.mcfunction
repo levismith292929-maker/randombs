@@ -1,6 +1,6 @@
 # Runs as QWDad at his position. Implosion: no teleport, just the blast.
-particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1 force
-particle minecraft:large_smoke ~ ~1 ~ 1.5 0.6 1.5 0.05 30 force
+particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1 normal
+particle minecraft:large_smoke ~ ~1 ~ 1.5 0.6 1.5 0.05 30 normal
 playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 1.2
 
 # 20 damage to every living non-player mob within 5 blocks.
