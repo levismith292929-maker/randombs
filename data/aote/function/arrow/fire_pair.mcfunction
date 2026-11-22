@@ -1,3 +1,3 @@
-# Reuse the Terminator's arrow setup and homing behavior.
-function aote:terminator/spawn
-execute rotated ~2 ~ run function aote:terminator/spawn
+# Fire two straight arrows. Unlike the Terminator, these arrows do not receive the homing tag.
+function aote:arrow/spawn
+execute rotated ~2 ~ run function aote:arrow/spawn
