@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:player_head"],
+          "predicates": {"minecraft:custom_data": "{item:pet4}"}
+        }
+      }
+    }
+  },
+  "rewards": {"function": "aote:pet/use4"}
+}
