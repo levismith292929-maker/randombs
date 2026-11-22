@@ -8,13 +8,7 @@ scoreboard objectives add aote_slash_t dummy
 scoreboard objectives add aote_mana dummy
 scoreboard objectives add aote_mana_delay dummy
 scoreboard objectives add aote_mana_regen dummy
-scoreboard objectives add aote_mana_max dummy
-scoreboard objectives add aote_mana_regen_rate dummy
-scoreboard objectives add aote_cost_bonus dummy
-scoreboard objectives add aote_cost dummy
-scoreboard objectives add aote_damage_bonus dummy
-scoreboard objectives add aote_pet_type dummy
-bossbar add aote:mana {"text":"Mana: ","color":"aqua","extra":[{"score":{"name":"QWDad","objective":"aote_mana"}},{"text":"/"},{"score":{"name":"QWDad","objective":"aote_mana_max"}}]}
+bossbar add aote:mana {"text":"Mana: ","color":"aqua","extra":[{"score":{"name":"QWDad","objective":"aote_mana"}},{"text":"/500"}]}
 bossbar set aote:mana max 500
 bossbar set aote:mana color blue
 bossbar set aote:mana style notched_10

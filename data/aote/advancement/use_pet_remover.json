@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:player_head"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{item:pet_remover}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "aote:pet/remove"
+  }
+}
