@@ -4,7 +4,9 @@
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
-          "items": ["minecraft:command_block"],
+          "items": [
+            "minecraft:command_block"
+          ],
           "predicates": {
             "minecraft:custom_data": "{item:pet_remover}"
           }
