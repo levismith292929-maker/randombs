@@ -39,4 +39,7 @@ execute as @e[type=marker,tag=aote_arrow_volley] at @s run function aote:arrow/v
 # Astraea Wither Shield orbs
 execute as @e[type=marker,tag=aote_orb] at @s run function aote:astraea/orb_tick
 
+# Necron's Scythe animated slash
+execute as @e[type=marker,tag=necron_scythe_slash] at @s run function aote:necrons_scythe/slash_tick
+
 # Necron's Scythe slash cooldown is handled by tick_player.
