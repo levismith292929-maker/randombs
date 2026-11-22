@@ -1,7 +1,7 @@
 execute unless entity @s[name=QWDad] run return 0
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana 500
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana_max 500
-execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana_regen_rate 25
+execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana_regen_rate 40
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_cost_bonus 0
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_damage_bonus 0
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_pet_type 0
@@ -17,7 +17,7 @@ scoreboard players add @s aote_pet_type 0
 scoreboard players add @s aote_mana_delay 0
 scoreboard players add @s aote_mana_regen 0
 execute unless score @s aote_mana_max matches 1.. run scoreboard players set @s aote_mana_max 500
-execute unless score @s aote_mana_regen_rate matches 1.. run scoreboard players set @s aote_mana_regen_rate 25
+execute unless score @s aote_mana_regen_rate matches 1.. run scoreboard players set @s aote_mana_regen_rate 40
 execute if score @s aote_mana_delay matches 1.. run scoreboard players remove @s aote_mana_delay 1
 execute if score @s aote_mana_delay matches 0 run scoreboard players add @s aote_mana_regen 1
 execute if score @s aote_mana_regen matches 20.. if score @s aote_mana < @s aote_mana_max run scoreboard players operation @s aote_mana += @s aote_mana_regen_rate
