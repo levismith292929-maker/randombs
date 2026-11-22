@@ -1,3 +1,6 @@
+scoreboard players add #aote_uid_counter aote_uid 0
+execute unless score @s aote_uid matches 1.. run scoreboard players add #aote_uid_counter aote_uid 1
+execute unless score @s aote_uid matches 1.. run scoreboard players operation @s aote_uid = #aote_uid_counter aote_uid
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana 500
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana_max 500
 execute unless entity @s[tag=aote_mana_init] run scoreboard players set @s aote_mana_regen_rate 40
