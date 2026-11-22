@@ -19,7 +19,7 @@
       "minecraft:custom_data": {
         "item": "all_hell_breaks_loose"
       },
-      "minecraft:item_model": "minecraft:item/netherite_hoe",
+      "minecraft:item_model": "minecraft:netherite_hoe",
       "minecraft:custom_name": {
         "text": "All Hell Breaks Loose",
         "italic": false,
