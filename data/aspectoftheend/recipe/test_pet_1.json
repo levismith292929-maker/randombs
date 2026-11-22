@@ -20,12 +20,12 @@
         "item": "pet1"
       },
       "minecraft:custom_name": {
-        "text": "Test Pet 1",
+        "text": "Endermite",
         "italic": false
       },
       "minecraft:enchantment_glint_override": true,
       "minecraft:consumable": {
-        "consume_seconds": 10000,
+        "consume_seconds": 0.05,
         "animation": "none",
         "has_consume_particles": false
       },
