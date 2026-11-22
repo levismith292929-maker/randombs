@@ -1,0 +1,26 @@
+# Breath step 2: solid ring of flame 1.0 blocks out from the mouth, ring radius 0.45
+execute positioned ^0.45 ^0.0 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.435 ^0.116 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.39 ^0.225 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.318 ^0.318 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.225 ^0.39 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.116 ^0.435 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.0 ^0.45 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.116 ^0.435 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.225 ^0.39 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.318 ^0.318 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.39 ^0.225 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.435 ^0.116 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.45 ^0.0 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.435 ^-0.116 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.39 ^-0.225 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.318 ^-0.318 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.225 ^-0.39 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.116 ^-0.435 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-0.0 ^-0.45 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.116 ^-0.435 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.225 ^-0.39 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.318 ^-0.318 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.39 ^-0.225 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.435 ^-0.116 ^1.0 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^ ^ ^1.0 positioned ~-0.75 ~-0.75 ~-0.75 as @e[dx=1.5,dy=1.5,dz=1.5,type=!minecraft:marker,type=!minecraft:item,type=!minecraft:experience_orb,name=!QWDad,tag=!aote_hit] run function aote:dragon/hit

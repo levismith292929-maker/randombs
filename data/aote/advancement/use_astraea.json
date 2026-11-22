@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:command_block"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{item:astraea}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "aote:astraea/use"
+  }
+}

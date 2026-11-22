@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "show_notification": true,
+  "category": "misc",
+  "pattern": [
+    "oso"
+  ],
+  "key": {
+    "o": [
+      "minecraft:obsidian"
+    ],
+    "s": [
+      "diamond_sword"
+    ]
+  },
+  "result": {
+    "id": "minecraft:repeating_command_block",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "item": "hyperion"
+      },
+      "minecraft:custom_name": {
+        "text": "Hyperion",
+        "color": "gold",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Ability: Implosion  RIGHT CLICK",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "Right-click to implode, dealing 20 damage",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "to every mob within 5 blocks of you.",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "minecraft:item_model": "minecraft:iron_sword",
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:consumable": {
+        "consume_seconds": 10000,
+        "animation": "none",
+        "has_consume_particles": false
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "show_notification": true,
+  "category": "misc",
+  "pattern": [
+    "fdf"
+  ],
+  "key": {
+    "f": [
+      "minecraft:flint_and_steel"
+    ],
+    "d": [
+      "minecraft:diamond_sword"
+    ]
+  },
+  "result": {
+    "id": "minecraft:netherite_sword",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "item": "dragon"
+      },
+      "minecraft:custom_name": {
+        "text": "Aspect of the Dragon",
+        "italic": false
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:consumable": {
+        "consume_seconds": 10000,
+        "animation": "none",
+        "has_consume_particles": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Ability: Dragon Rage  RIGHT CLICK",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "Right-click to breathe fire 5 blocks in the",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "direction you look. Every mob it touches takes",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "10 damage once.",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:repeating_command_block"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{item:hyperion}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "aote:hyperion/use"
+  }
+}
