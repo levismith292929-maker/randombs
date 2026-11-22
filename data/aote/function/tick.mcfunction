@@ -1,4 +1,5 @@
 # Lock: only QWDad can craft them.
+recipe take @a[name=!QWDad] aspectoftheend:necrons_scythe
 recipe take @a[name=!QWDad] aspectoftheend:aote
 recipe take @a[name=!QWDad] aspectoftheend:aotd
 recipe take @a[name=!QWDad] aspectoftheend:hyperion
