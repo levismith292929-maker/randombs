@@ -21,18 +21,17 @@ execute anchored eyes run particle minecraft:sweep_attack ^0.3 ^0 ^3 0 0 0 0 1 n
 execute anchored eyes run particle minecraft:sweep_attack ^0.6 ^0 ^3 0 0 0 0 1 normal
 execute anchored eyes run particle minecraft:sweep_attack ^0.9 ^0 ^3 0 0 0 0 1 normal
 
-# Collect targets in a corridor from the player to the slash (every half-block).
-# The temporary tag ensures each target is damaged only once.
-execute anchored eyes positioned ^ ^ ^0.25 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run tag @s add necron_scythe_hit
-execute anchored eyes positioned ^ ^ ^0.75 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run tag @s add necron_scythe_hit
-execute anchored eyes positioned ^ ^ ^1.25 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run tag @s add necron_scythe_hit
-execute anchored eyes positioned ^ ^ ^1.75 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run tag @s add necron_scythe_hit
-execute anchored eyes positioned ^ ^ ^2.25 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run tag @s add necron_scythe_hit
-execute anchored eyes positioned ^ ^ ^2.75 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run tag @s add necron_scythe_hit
-execute anchored eyes positioned ^ ^ ^3 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run tag @s add necron_scythe_hit
+# Check several points from the player's eyes to three blocks ahead.
+# Each target is processed immediately and tagged, so it can only be hit once.
+execute anchored eyes positioned ^ ^ ^0.25 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
+execute anchored eyes positioned ^ ^ ^0.75 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
+execute anchored eyes positioned ^ ^ ^1.25 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
+execute anchored eyes positioned ^ ^ ^1.75 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
+execute anchored eyes positioned ^ ^ ^2.25 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
+execute anchored eyes positioned ^ ^ ^2.75 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
+execute anchored eyes positioned ^ ^ ^3 as @e[distance=..1,name=!QWDad,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
 
-# Deal 20 magic damage once to every entity found along the full path.
-execute as @e[tag=necron_scythe_hit] run damage @s 20 minecraft:magic by QWDad
+# Remove temporary tags after the slash finishes.
 tag @e[tag=necron_scythe_hit] remove necron_scythe_hit
 
 playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 0.8
