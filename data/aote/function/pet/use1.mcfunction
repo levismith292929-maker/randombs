@@ -1,6 +1,5 @@
 advancement revoke @s only aote:use_pet1
 execute unless entity @s[name=QWDad] run return 0
-give @s minecraft:command_block[minecraft:item_model="minecraft:player_head",minecraft:custom_data={item:"pet1"},minecraft:custom_name={"text":"Enderman","italic":false},minecraft:enchantment_glint_override=true,minecraft:consumable={consume_seconds:0.05,animation:"none",has_consume_particles:false},minecraft:lore=[{text:"Ability: Summon Pet  RIGHT CLICK",color:"gold",italic:false},{text:"Max Mana: 1000",color:"blue",italic:false},{text:"Mana Regeneration: 50/sec",color:"blue",italic:false},{text:"Damage: -20%",color:"red",italic:false}],minecraft:profile={name:"MHF_Enderman"}] 1
 function aote:pet/remove_silent
 scoreboard players set @s aote_pet_type 1
 scoreboard players set @s aote_mana_max 1000
