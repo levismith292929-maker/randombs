@@ -32,9 +32,12 @@
       "minecraft:dyed_color": 15162428,
       "item_model": "leather_leggings",
       "custom_name": {
-        "text": "Necron Leggings",
+        "text": "Necron's Leggings",
         "color": "#ffd000",
         "italic": false
+      },
+      "custom_data": {
+        "item": "necron"
       }
     },
     "count": 1
