@@ -5,9 +5,10 @@
   "pattern": ["ddd", " d ", " d "],
   "key": {"d": ["minecraft:dirt"]},
   "result": {
-    "id": "minecraft:player_head",
+    "id": "minecraft:command_block",
     "count": 1,
     "components": {
+      "minecraft:item_model": "minecraft:player_head",
       "minecraft:custom_data": {"item": "pet4"},
       "minecraft:custom_name": {"text": "Iron Golem", "italic": false},
       "minecraft:enchantment_glint_override": true,
