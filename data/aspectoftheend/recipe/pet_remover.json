@@ -11,7 +11,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:player_head",
+    "id": "minecraft:command_block",
     "count": 1,
     "components": {
       "minecraft:custom_data": {
@@ -46,7 +46,8 @@
       ],
       "minecraft:profile": {
         "name": "MHF_TNT2"
-      }
+      },
+      "minecraft:item_model": "minecraft:player_head"
     }
   }
 }
