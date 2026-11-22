@@ -17,6 +17,8 @@ scoreboard objectives add aote_pet_type dummy
 scoreboard objectives add aote_zcd dummy
 scoreboard objectives add aote_zhealth dummy
 scoreboard objectives add aote_zmax dummy
+scoreboard objectives add aote_ncd dummy
+team add aote_necron_guard
 bossbar add aote:mana {"text":"Mana: ","color":"aqua","extra":[{"score":{"name":"QWDad","objective":"aote_mana"}},{"text":"/"},{"score":{"name":"QWDad","objective":"aote_mana_max"}}]}
 bossbar set aote:mana max 500
 bossbar set aote:mana color blue
