@@ -1,4 +1,4 @@
-execute at @s run kill @e[type=minecraft:item_display,tag=aote_pet,distance=..3,sort=nearest,limit=1]
+execute as @e[type=minecraft:item_display,tag=aote_pet] if score @s aote_uid = @p[limit=1] aote_uid run kill @s
 attribute @s minecraft:attack_damage modifier remove aote:pet_damage
 scoreboard players set @s aote_pet_type 0
 scoreboard players set @s aote_mana_max 500
