@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:stick"],
+          "predicates": {
+            "minecraft:custom_data": "{item:necron_call}"
+          }
+        },
+        "player": {
+          "flags": {
+            "is_sneaking": true
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "aote:necron_armor/summon"
+  }
+}
