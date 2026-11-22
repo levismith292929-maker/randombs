@@ -8,4 +8,5 @@ scoreboard players set @s aote_damage_bonus 15
 attribute @s minecraft:attack_damage modifier add aote:pet_damage 0.15 add_multiplied_total
 execute if score @s aote_mana > @s aote_mana_max run scoreboard players operation @s aote_mana = @s aote_mana_max
 execute at @s run summon minecraft:item_display ~ ~0.8 ~ {Tags:["aote_pet"],item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVjM2ZmNTYzMjkwYjEzZmYzYmNjMzY4OThhZjdlYWE5ODhiNmNjMThkYzI1NDE0N2Y1ODM3NGFmZTliMjFiOSJ9fX0="}]}}},item_display:"fixed",transformation:{scale:[0.5f,0.5f,0.5f]},teleport_duration:3}
+scoreboard players operation @e[type=minecraft:item_display,tag=aote_pet,sort=nearest,limit=1] aote_uid = @s aote_uid
 tellraw @s {"text":"Ender Dragon pet activated!","color":"green"}
