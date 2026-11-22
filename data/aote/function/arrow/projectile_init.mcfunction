@@ -11,7 +11,7 @@ data modify entity @s Fire set value 100s
 data modify entity @s pickup set value 0b
 # No piercing: the arrow is removed when it hits an entity.
 data modify entity @s PierceLevel set value 0b
-data modify entity @s Owner set from entity @a[name=QWDad,limit=1] UUID
+data modify entity @s Owner set from entity @p[distance=..2,sort=nearest,limit=1] UUID
 
 # Build a velocity vector 3 blocks/tick along the volley marker's rotation.
 execute store result score #ax aote_t run data get entity @s Pos[0] 1000
