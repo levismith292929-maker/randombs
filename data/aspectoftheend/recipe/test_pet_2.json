@@ -35,6 +35,11 @@
           "italic": false
         },
         {
+          "text": "Max Mana: 300",
+          "color": "blue",
+          "italic": false
+        },
+        {
           "text": "Mana Regeneration: 20/sec",
           "color": "blue",
           "italic": false
