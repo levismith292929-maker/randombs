@@ -26,6 +26,8 @@ recipe give QWDad aspectoftheend:pet_remover
 recipe give QWDad aspectoftheend:test_pet_1
 recipe give QWDad aspectoftheend:test_pet_2
 recipe give QWDad aspectoftheend:test_pet_3
+recipe take @a[name=!QWDad] aspectoftheend:iron_golem_pet
+recipe give QWDad aspectoftheend:iron_golem_pet
 
 # Lock: dropped items snap back to QWDad, and only he can pick them up.
 execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data"{item:"aote"} if entity @a[name=QWDad,limit=1] run function aote:lock_item
