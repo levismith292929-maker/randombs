@@ -33,10 +33,12 @@ scoreboard players add @s aote_cd 0
 scoreboard players add @s aote_acd 0
 scoreboard players add @s aote_dcd 0
 scoreboard players add @s aote_tcd 0
+scoreboard players add @s aote_zcd 0
 execute if score @s aote_cd matches 1.. run scoreboard players remove @s aote_cd 1
 execute if score @s aote_acd matches 1.. run scoreboard players remove @s aote_acd 1
 execute if score @s aote_dcd matches 1.. run scoreboard players remove @s aote_dcd 1
 execute if score @s aote_tcd matches 1.. run scoreboard players remove @s aote_tcd 1
+execute if score @s aote_zcd matches 1.. run scoreboard players remove @s aote_zcd 1
 execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aote}] if score @s aote_cd matches 0 run title @s actionbar {"text":"AOTE: READY","color":"green"}
 execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aote}] if score @s aote_cd matches 1.. run title @s actionbar [{"text":"AOTE: "},{"score":{"name":"@s","objective":"aote_cd"}},{"text":" ticks","color":"yellow"}]
 execute if items entity @s weapon.mainhand minecraft:repeating_command_block[minecraft:custom_data~{item:hyperion}] if score @s aote_cd matches 0 run title @s actionbar {"text":"Hyperion: READY","color":"green"}
@@ -50,3 +52,6 @@ execute if items entity @s weapon.mainhand minecraft:netherite_sword[minecraft:c
 execute if items entity @s weapon.mainhand minecraft:chain_command_block[minecraft:custom_data~{item:necrons_scythe}] if score @s aote_tcd matches 0 run title @s actionbar {"text":"Necron's Scythe: READY","color":"green"}
 execute if items entity @s weapon.mainhand minecraft:chain_command_block[minecraft:custom_data~{item:necrons_scythe}] if score @s aote_tcd matches 1.. run title @s actionbar [{"text":"Necron's Scythe: "},{"score":{"name":"@s","objective":"aote_tcd"}},{"text":" ticks","color":"yellow"}]
 execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aote}] run function aote:preview/start
+
+execute if items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 0 run title @s actionbar {"text":"Zombie Sword: READY","color":"green"}
+execute if items entity @s weapon.mainhand minecraft:golden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 1.. run title @s actionbar [{"text":"Zombie Sword: "},{"score":{"name":"@s","objective":"aote_zcd"}},{"text":" ticks","color":"yellow"}]
