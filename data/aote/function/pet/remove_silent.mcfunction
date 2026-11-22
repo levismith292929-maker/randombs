@@ -5,4 +5,3 @@ scoreboard players set @s aote_mana_max 500
 scoreboard players set @s aote_mana_regen_rate 25
 scoreboard players set @s aote_cost_bonus 0
 scoreboard players set @s aote_damage_bonus 0
-execute if score @s aote_mana > @s aote_mana_max run scoreboard players operation @s aote_mana = @s aote_mana_max
