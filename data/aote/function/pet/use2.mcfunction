@@ -1,6 +1,6 @@
 advancement revoke @s only aote:use_pet2
-clear @s minecraft:command_block[minecraft:item_model="minecraft:player_head",minecraft:custom_data={item:"pet2"}] 1
 execute unless entity @s[name=QWDad] run return 0
+give @s minecraft:command_block[minecraft:item_model="minecraft:player_head",minecraft:custom_data={item:"pet2"},minecraft:custom_name={"text":"Ender Dragon","italic":false},minecraft:enchantment_glint_override=true,minecraft:consumable={consume_seconds:0.05,animation:"none",has_consume_particles:false},minecraft:lore=[{text:"Ability: Summon Pet  RIGHT CLICK",color:"gold",italic:false},{text:"Max Mana: 300",color:"blue",italic:false},{text:"Mana Regeneration: 20/sec",color:"blue",italic:false},{text:"Damage: +15%",color:"blue",italic:false}],minecraft:profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVjM2ZmNTYzMjkwYjEzZmYzYmNjMzY4OThhZjdlYWE5ODhiNmNjMThkYzI1NDE0N2Y1ODM3NGFmZTliMjFiOSJ9fX0="}]}] 1
 function aote:pet/remove_silent
 scoreboard players set @s aote_pet_type 2
 scoreboard players set @s aote_mana_max 300
