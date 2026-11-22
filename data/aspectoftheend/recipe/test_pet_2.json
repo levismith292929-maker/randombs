@@ -35,12 +35,12 @@
           "italic": false
         },
         {
-          "text": "Mana Regeneration: 50/sec",
+          "text": "Mana Regeneration: 20/sec",
           "color": "blue",
           "italic": false
         },
         {
-          "text": "Ability Costs: +50 Mana",
+          "text": "Damage: +15%",
           "color": "blue",
           "italic": false
         }
