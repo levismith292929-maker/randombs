@@ -47,6 +47,7 @@ execute as @e[type=item] if data entity @s Item.components."minecraft:custom_dat
 
 # Aspect of the Dragon breath
 execute as @e[type=marker,tag=aote_breath] at @s run function aote:dragon/breath_tick
+kill @e[type=minecraft:item_display,tag=aote_pet]
 
 execute as @a at @s run function aote:tick_player
 
