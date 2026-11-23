@@ -4,6 +4,9 @@ execute unless items entity @s armor.chest minecraft:netherite_chestplate[minecr
 execute unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run return 0
 execute unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run return 0
 execute if score @s aote_ncd matches 1.. run return 0
+scoreboard players operation @s aote_damage_diff = @s aote_damage_stat
+scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
+execute unless score @s aote_damage_diff matches 100.. run return 0
 scoreboard players set @s aote_ncd 600
 team join aote_necron_guard @s
 execute at @s positioned ^-1 ^ ^ run summon minecraft:wither_skeleton ~ ~ ~ {Tags:["necron_guard"],PersistenceRequired:1b,CanPickUpLoot:0b,DeathLootTable:"minecraft:empty",drop_chances:{head:0.0f,chest:0.0f,legs:0.0f,feet:0.0f,mainhand:0.0f,offhand:0.0f}}
