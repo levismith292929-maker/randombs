@@ -1,0 +1,25 @@
+[
+  {
+    "function": "minecraft:toggle_tooltips",
+    "toggles": {
+      "attribute_modifiers": false
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "text": "Defense: 24",
+        "color": "green",
+        "italic": false
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "aote_armor_lore": "1b"
+    }
+  }
+]
