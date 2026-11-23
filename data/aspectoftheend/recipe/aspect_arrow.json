@@ -58,7 +58,8 @@
           "color": "blue",
           "italic": false
         }
-      ]
+      ],
+      "minecraft:max_stack_size": 1
     }
   }
 }
