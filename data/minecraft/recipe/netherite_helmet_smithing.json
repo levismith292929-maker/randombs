@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:netherite_tool_materials",
+  "base": "minecraft:diamond_helmet",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "result": {
+    "id": "minecraft:netherite_helmet",
+    "components": {
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "Defense: 23",
+          "color": "green",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": {
+        "aote_armor_lore": "1b"
+      }
+    }
+  }
+}
