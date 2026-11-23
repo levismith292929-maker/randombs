@@ -6,6 +6,7 @@ execute if score @s aote_damage_bonus matches -20 run data modify entity @s dama
 execute unless score @s aote_damage_bonus matches -20 unless score @s aote_damage_bonus matches 5 unless score @s aote_damage_bonus matches 15 unless score @s aote_damage_bonus matches 40 run data modify entity @s damage set value 1.375d
 
 tag @s add aote_arrow_flight
+scoreboard players set @s aote_arrow_age 0
 
 # Build a unit direction vector from the volley marker's position and facing.
 execute at @e[type=marker,tag=aote_arrow_volley,sort=nearest,limit=1] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["aote_vec_origin"],Duration:2}
