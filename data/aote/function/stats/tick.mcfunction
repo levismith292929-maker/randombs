@@ -14,7 +14,6 @@ scoreboard players add @s aote_stat_effective 0
 scoreboard players add @s aote_stat_total_strength 0
 scoreboard players add @s aote_stat_health_display 0
 scoreboard players add @s aote_stat_max_display 0
-scoreboard players add @s aote_stat_temp 0
 scoreboard players add @s aote_stat_vanilla_health 0
 execute unless entity @s[tag=aote_stats_init] run scoreboard players set @s aote_stat_health 1000
 execute unless entity @s[tag=aote_stats_init] run scoreboard players set @s aote_stat_max_health 1000
