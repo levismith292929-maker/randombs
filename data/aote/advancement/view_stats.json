@@ -6,7 +6,9 @@
         "item": {
           "items": ["minecraft:nether_star"],
           "predicates": {
-            "minecraft:custom_data": "{aote_view_stats:1b}"
+            "minecraft:custom_data": {
+              "aote_view_stats": 1
+            }
           }
         }
       }
