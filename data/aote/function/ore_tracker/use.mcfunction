@@ -9,7 +9,7 @@ scoreboard players operation @s aote_mana -= @s aote_cost
 scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
 scoreboard players set @s aote_ore_cd 600
-execute at @s run summon marker ~ ~ ~ {Tags:["aote_ore_scan"]}
+execute at @s align xyz run summon marker ~0.5 ~0.5 ~0.5
 execute at @s run scoreboard players operation @e[type=marker,tag=aote_ore_scan,sort=nearest,limit=1] aote_uid = @s aote_uid
 execute at @s run scoreboard players set @e[type=marker,tag=aote_ore_scan,sort=nearest,limit=1] aote_ore_scan 0
 tellraw @s {"text":"Searching within 32 blocks in this dimension...","color":"aqua"}
