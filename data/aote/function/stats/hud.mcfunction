@@ -1,8 +1,8 @@
-title @s actionbar [{"text":"Health: "},{"score":{"name":"@s","objective":"aote_stat_health_display"}},{"text":"/"},{"score":{"name":"@s","objective":"aote_stat_max_display"}}]
 scoreboard players operation @s aote_stat_health_display = @s aote_stat_health
 scoreboard players operation @s aote_stat_health_display /= #ten aote_stat_const
 scoreboard players operation @s aote_stat_max_display = @s aote_stat_max_health
 scoreboard players operation @s aote_stat_max_display /= #ten aote_stat_const
+title @s actionbar [{"text":"Health: "},{"score":{"name":"@s","objective":"aote_stat_health_display"}},{"text":"/"},{"score":{"name":"@s","objective":"aote_stat_max_display"}}]
 execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 0 run title @s actionbar [{"text":"Health: "},{"score":{"name":"@s","objective":"aote_stat_health_display"}},{"text":"/"},{"score":{"name":"@s","objective":"aote_stat_max_display"}},{"text":" | Ore Tracker: READY","color":"green"}]
 execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 1.. run title @s actionbar [{"text":"Health: "},{"score":{"name":"@s","objective":"aote_stat_health_display"}},{"text":"/"},{"score":{"name":"@s","objective":"aote_stat_max_display"}},{"text":" | Ore Tracker: "},{"score":{"name":"@s","objective":"aote_ore_cd"}},{"text":" ticks","color":"yellow"}]
 execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:aote}] if score @s aote_end_cd matches 0 run title @s actionbar [{"text":"Health: "},{"score":{"name":"@s","objective":"aote_stat_health_display"}},{"text":"/"},{"score":{"name":"@s","objective":"aote_stat_max_display"}},{"text":" | AOTE: READY","color":"green"}]
