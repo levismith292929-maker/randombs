@@ -62,7 +62,7 @@
           "italic": false
         }
       ],
-      "minecraft:item_model": "minecraft:item/compass"
+      "minecraft:item_model": "minecraft:compass"
     }
   }
 }
