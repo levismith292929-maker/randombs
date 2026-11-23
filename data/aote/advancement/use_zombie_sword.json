@@ -4,7 +4,9 @@
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
-          "items": ["minecraft:golden_sword"],
+          "items": [
+            "minecraft:wooden_sword"
+          ],
           "predicates": {
             "minecraft:custom_data": "{item:zombie_sword}"
           }
