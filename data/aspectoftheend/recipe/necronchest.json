@@ -42,6 +42,21 @@
       "minecraft:unbreakable": {},
       "minecraft:lore": [
         {
+          "text": "Defense: 70",
+          "color": "green",
+          "italic": false
+        },
+        {
+          "text": "Strength: 20",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Intelligence: 5",
+          "color": "aqua",
+          "italic": false
+        },
+        {
           "text": "Full Set Bonus: Necron's Guards",
           "color": "gold",
           "italic": false
