@@ -124,3 +124,7 @@ tellraw @a "Random bullshit I came of with has loaded v1"
 scoreboard objectives add aote_vec dummy
 scoreboard objectives add aote_hit_t dummy
 scoreboard objectives add aote_arrow_age dummy
+
+scoreboard objectives add aote_damage_stat minecraft.custom:minecraft.damage_taken
+scoreboard objectives add aote_damage_base dummy
+scoreboard objectives add aote_damage_diff dummy
