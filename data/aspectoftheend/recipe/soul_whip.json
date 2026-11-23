@@ -28,10 +28,10 @@
       "minecraft:lore": [
         {"text": "Ability: Flay  RIGHT CLICK", "color": "gold", "italic": false},
         {"text": "Unleashes a 13-block soul-flame whip.", "color": "gray", "italic": false},
-        {"text": "Deals 5 magic damage when the whip reaches", "color": "gray", "italic": false},
+        {"text": "Deals 1 magic damage when the whip reaches", "color": "gray", "italic": false},
         {"text": "an enemy. Each enemy is hit only once.", "color": "gray", "italic": false},
-        {"text": "Mana Cost: 60", "color": "blue", "italic": false},
-        {"text": "Cooldown: 10 ticks", "color": "blue", "italic": false}
+        {"text": "Mana Cost: 5", "color": "blue", "italic": false},
+        {"text": "Cooldown: 4 ticks", "color": "blue", "italic": false}
       ]
     }
   }
