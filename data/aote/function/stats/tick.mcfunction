@@ -15,7 +15,6 @@ scoreboard players add @s aote_stat_total_strength 0
 scoreboard players add @s aote_stat_health_display 0
 scoreboard players add @s aote_stat_max_display 0
 scoreboard players add @s aote_stat_damage_display 0
-scoreboard players add @s aote_stat_crit_damage 0
 scoreboard players add @s aote_stat_necron_int 0
 scoreboard players add @s aote_stat_necron_int_prev 0
 scoreboard players add @s aote_stat_necron_int_diff 0
@@ -62,7 +61,6 @@ execute if items entity @s armor.feet minecraft:netherite_boots unless items ent
 scoreboard players set @s aote_stat_defense 0
 scoreboard players set @s aote_stat_armor_strength 0
 scoreboard players set @s aote_stat_necron_int 0
-scoreboard players set @s aote_stat_crit_damage 0
 execute if items entity @s armor.head #aote:armor_head unless items entity @s armor.head #aote:armor_head[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.head minecraft:netherite_helmet[minecraft:custom_data~{item:necron}] run item modify entity @s armor.head aote:strip_armor_attributes
 execute if items entity @s armor.chest #aote:armor_chest unless items entity @s armor.chest #aote:armor_chest[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run item modify entity @s armor.chest aote:strip_armor_attributes
 execute if items entity @s armor.legs #aote:armor_legs unless items entity @s armor.legs #aote:armor_legs[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run item modify entity @s armor.legs aote:strip_armor_attributes
@@ -112,10 +110,6 @@ execute if items entity @s armor.head minecraft:netherite_helmet[minecraft:custo
 execute if items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 5
 execute if items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 5
 execute if items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 5
-execute if items entity @s armor.head minecraft:netherite_helmet[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_crit_damage 15
-execute if items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_crit_damage 15
-execute if items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_crit_damage 15
-execute if items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_crit_damage 15
 # Apply the Intelligence bonus to maximum Mana, keeping current Mana unchanged.
 scoreboard players operation @s aote_stat_necron_int_diff = @s aote_stat_necron_int
 scoreboard players operation @s aote_stat_necron_int_diff -= @s aote_stat_necron_int_prev
