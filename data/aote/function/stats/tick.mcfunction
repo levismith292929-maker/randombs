@@ -28,10 +28,10 @@ scoreboard players operation @s aote_stat_deaths_base = @s aote_stat_deaths
 # Recalculate Defense and armor Strength from equipped armor.
 scoreboard players set @s aote_stat_defense 0
 scoreboard players set @s aote_stat_armor_strength 0
-execute if items entity @s armor.head #aote:armor_head unless items entity @s armor.head #aote:armor_head[minecraft:custom_data~{aote_armor_stripped:"1b"}] run item modify entity @s armor.head aote:strip_armor_attributes
-execute if items entity @s armor.chest #aote:armor_chest unless items entity @s armor.chest #aote:armor_chest[minecraft:custom_data~{aote_armor_stripped:"1b"}] run item modify entity @s armor.chest aote:strip_armor_attributes
-execute if items entity @s armor.legs #aote:armor_legs unless items entity @s armor.legs #aote:armor_legs[minecraft:custom_data~{aote_armor_stripped:"1b"}] run item modify entity @s armor.legs aote:strip_armor_attributes
-execute if items entity @s armor.feet #aote:armor_feet unless items entity @s armor.feet #aote:armor_feet[minecraft:custom_data~{aote_armor_stripped:"1b"}] run item modify entity @s armor.feet aote:strip_armor_attributes
+execute if items entity @s armor.head #aote:armor_head unless items entity @s armor.head #aote:armor_head[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.head minecraft:netherite_helmet[minecraft:custom_data~{item:necron}] run item modify entity @s armor.head aote:strip_armor_attributes
+execute if items entity @s armor.chest #aote:armor_chest unless items entity @s armor.chest #aote:armor_chest[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run item modify entity @s armor.chest aote:strip_armor_attributes
+execute if items entity @s armor.legs #aote:armor_legs unless items entity @s armor.legs #aote:armor_legs[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run item modify entity @s armor.legs aote:strip_armor_attributes
+execute if items entity @s armor.feet #aote:armor_feet unless items entity @s armor.feet #aote:armor_feet[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run item modify entity @s armor.feet aote:strip_armor_attributes
 execute if items entity @s armor.head minecraft:leather_helmet run scoreboard players add @s aote_stat_defense 5
 execute if items entity @s armor.head minecraft:copper_helmet run scoreboard players add @s aote_stat_defense 9
 execute if items entity @s armor.head minecraft:golden_helmet run scoreboard players add @s aote_stat_defense 10
@@ -39,7 +39,7 @@ execute if items entity @s armor.head minecraft:chainmail_helmet run scoreboard 
 execute if items entity @s armor.head minecraft:chainmail_helmet run scoreboard players add @s aote_stat_armor_strength 4
 execute if items entity @s armor.head minecraft:iron_helmet run scoreboard players add @s aote_stat_defense 13
 execute if items entity @s armor.head minecraft:diamond_helmet run scoreboard players add @s aote_stat_defense 17
-execute if items entity @s armor.head minecraft:netherite_helmet run scoreboard players add @s aote_stat_defense 23
+execute if items entity @s armor.head minecraft:netherite_helmet unless items entity @s armor.head minecraft:netherite_helmet[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 23
 execute if items entity @s armor.chest minecraft:leather_chestplate run scoreboard players add @s aote_stat_defense 10
 execute if items entity @s armor.chest minecraft:copper_chestplate run scoreboard players add @s aote_stat_defense 17
 execute if items entity @s armor.chest minecraft:golden_chestplate run scoreboard players add @s aote_stat_defense 18
@@ -47,7 +47,7 @@ execute if items entity @s armor.chest minecraft:chainmail_chestplate run scoreb
 execute if items entity @s armor.chest minecraft:chainmail_chestplate run scoreboard players add @s aote_stat_armor_strength 8
 execute if items entity @s armor.chest minecraft:iron_chestplate run scoreboard players add @s aote_stat_defense 21
 execute if items entity @s armor.chest minecraft:diamond_chestplate run scoreboard players add @s aote_stat_defense 30
-execute if items entity @s armor.chest minecraft:netherite_chestplate run scoreboard players add @s aote_stat_defense 36
+execute if items entity @s armor.chest minecraft:netherite_chestplate unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 36
 execute if items entity @s armor.legs minecraft:leather_leggings run scoreboard players add @s aote_stat_defense 7
 execute if items entity @s armor.legs minecraft:copper_leggings run scoreboard players add @s aote_stat_defense 14
 execute if items entity @s armor.legs minecraft:golden_leggings run scoreboard players add @s aote_stat_defense 15
@@ -55,7 +55,7 @@ execute if items entity @s armor.legs minecraft:chainmail_leggings run scoreboar
 execute if items entity @s armor.legs minecraft:chainmail_leggings run scoreboard players add @s aote_stat_armor_strength 6
 execute if items entity @s armor.legs minecraft:iron_leggings run scoreboard players add @s aote_stat_defense 18
 execute if items entity @s armor.legs minecraft:diamond_leggings run scoreboard players add @s aote_stat_defense 24
-execute if items entity @s armor.legs minecraft:netherite_leggings run scoreboard players add @s aote_stat_defense 30
+execute if items entity @s armor.legs minecraft:netherite_leggings unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 30
 execute if items entity @s armor.feet minecraft:leather_boots run scoreboard players add @s aote_stat_defense 3
 execute if items entity @s armor.feet minecraft:copper_boots run scoreboard players add @s aote_stat_defense 6
 execute if items entity @s armor.feet minecraft:golden_boots run scoreboard players add @s aote_stat_defense 7
@@ -63,7 +63,7 @@ execute if items entity @s armor.feet minecraft:chainmail_boots run scoreboard p
 execute if items entity @s armor.feet minecraft:chainmail_boots run scoreboard players add @s aote_stat_armor_strength 3
 execute if items entity @s armor.feet minecraft:iron_boots run scoreboard players add @s aote_stat_defense 10
 execute if items entity @s armor.feet minecraft:diamond_boots run scoreboard players add @s aote_stat_defense 13
-execute if items entity @s armor.feet minecraft:netherite_boots run scoreboard players add @s aote_stat_defense 19
+execute if items entity @s armor.feet minecraft:netherite_boots unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 19
 # Cancel vanilla unarmed damage; the held sword/axe supplies the custom Damage and Strength attributes.
 attribute @s minecraft:attack_damage base set 0
 # Apply custom stats to ordinary vanilla swords and axes only. Custom ability swords are excluded.
