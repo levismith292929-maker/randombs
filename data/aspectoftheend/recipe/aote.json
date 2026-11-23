@@ -39,22 +39,22 @@
           "italic": false
         },
         {
-          "text": "Hold it in your main hand and a marker shows",
+          "text": "Teleports you 5 blocks in the direction",
           "color": "gray",
           "italic": false
         },
         {
-          "text": "where you are aiming. Right-click to teleport",
+          "text": "you are facing.",
           "color": "gray",
           "italic": false
         },
         {
-          "text": "onto that block (up to 64 blocks away).",
-          "color": "gray",
+          "text": "Mana Cost: 15",
+          "color": "blue",
           "italic": false
         },
         {
-          "text": "Mana Cost: 10",
+          "text": "Cooldown: 5 ticks",
           "color": "blue",
           "italic": false
         }
