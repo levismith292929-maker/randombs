@@ -9,4 +9,4 @@ scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
 scoreboard players set @s aote_steps 640
 execute anchored eyes positioned ^ ^ ^ run function aote:raycast/teleport_step
-scoreboard players set @s aote_cd 3
+scoreboard players set @s aote_cd 1
