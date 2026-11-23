@@ -56,7 +56,9 @@ execute unless score @s aote_mana_regen_rate matches 1.. run scoreboard players 
 execute if score @s aote_pet_type matches 0 if score @s aote_mana_regen_rate matches 25 run scoreboard players set @s aote_mana_regen_rate 40
 execute if score @s aote_mana_delay matches 1.. run scoreboard players remove @s aote_mana_delay 1
 execute if score @s aote_mana_delay matches 0 run scoreboard players add @s aote_mana_regen 1
+execute if score @s aote_stat_necron_int matches 1.. run scoreboard players add @s aote_mana_regen_rate 5
 execute if score @s aote_mana_regen matches 20.. if score @s aote_mana < @s aote_mana_max run scoreboard players operation @s aote_mana += @s aote_mana_regen_rate
+execute if score @s aote_stat_necron_int matches 1.. run scoreboard players remove @s aote_mana_regen_rate 5
 execute if score @s aote_mana > @s aote_mana_max run scoreboard players operation @s aote_mana = @s aote_mana_max
 execute if score @s aote_mana_regen matches 20.. run scoreboard players set @s aote_mana_regen 0
 execute if score @s aote_mana >= @s aote_mana_max run scoreboard players set @s aote_mana_regen 0
