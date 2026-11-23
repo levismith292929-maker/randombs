@@ -12,8 +12,7 @@ scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
 execute if score @s aote_damage_diff matches 100.. run function aote:necron_armor/summon
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:ore_tracker
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aote
-execute unless entity @s[tag=aote_aotv_recipe_unlocked] run recipe give @s aspectoftheend:aotv
-tag @s add aote_aotv_recipe_unlocked
+recipe give @s aspectoftheend:aotv
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aotd
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aspect_arrow
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necrons_scythe
