@@ -136,3 +136,24 @@ scoreboard objectives add aote_ore_x dummy
 scoreboard objectives add aote_ore_y dummy
 scoreboard objectives add aote_ore_z dummy
 
+
+# Hypixel-style player stats.
+scoreboard objectives add aote_stat_deaths minecraft.custom:minecraft.deaths
+scoreboard objectives add aote_stat_deaths_base dummy
+scoreboard objectives add aote_stat_health dummy
+scoreboard objectives add aote_stat_max_health dummy
+scoreboard objectives add aote_stat_strength dummy
+scoreboard objectives add aote_stat_armor_strength dummy
+scoreboard objectives add aote_stat_defense dummy
+scoreboard objectives add aote_stat_damage_base dummy
+scoreboard objectives add aote_stat_damage_diff dummy
+scoreboard objectives add aote_stat_reduction dummy
+scoreboard objectives add aote_stat_remaining dummy
+scoreboard objectives add aote_stat_effective dummy
+scoreboard objectives add aote_stat_total_strength dummy
+scoreboard objectives add aote_stat_health_display dummy
+scoreboard objectives add aote_stat_max_display dummy
+scoreboard objectives add aote_stat_temp dummy
+scoreboard objectives add aote_stat_const dummy
+scoreboard players set #ten aote_stat_const 10
+scoreboard players set #hundred aote_stat_const 100
