@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "items": [
-            "minecraft:chain_command_block"
+            "minecraft:command_block"
           ],
           "predicates": {
             "minecraft:custom_data": "{item:necrons_scythe}"
