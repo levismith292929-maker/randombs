@@ -60,7 +60,8 @@
         "has_consume_particles": false
       },
       "minecraft:unbreakable": {},
-      "minecraft:attribute_modifiers": []
+      "minecraft:attribute_modifiers": [],
+      "minecraft:item_model": "minecraft:diamond_sword"
     }
   }
 }
