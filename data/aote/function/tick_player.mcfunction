@@ -1,7 +1,11 @@
 scoreboard players add @s aote_damage_stat 0
 scoreboard players add @s aote_damage_base 0
 execute unless entity @s[tag=aote_necron_damage_init] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
- tag @s add aote_necron_damage_init
+tag @s add aote_necron_damage_init
+execute unless items entity @s armor.head minecraft:wither_skeleton_skull[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
+execute unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
+execute unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
+execute unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aote
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aotd
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aspect_arrow
