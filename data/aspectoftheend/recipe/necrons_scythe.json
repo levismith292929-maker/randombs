@@ -3,11 +3,16 @@
   "show_notification": true,
   "category": "misc",
   "pattern": [
-    "ddd"
+    "dd",
+    " b",
+    " b"
   ],
   "key": {
     "d": [
-      "minecraft:dirt"
+      "minecraft:netherite_scrap"
+    ],
+    "b": [
+      "minecraft:breeze_rod"
     ]
   },
   "result": {
