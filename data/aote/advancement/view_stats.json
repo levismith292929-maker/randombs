@@ -1,15 +1,10 @@
 {
   "criteria": {
     "use": {
-      "trigger": "minecraft:using_item",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": ["minecraft:nether_star"],
-          "predicates": {
-            "minecraft:custom_data": {
-              "aote_view_stats": 1
-            }
-          }
+          "items": ["minecraft:nether_star"]
         }
       }
     }
