@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:gold_ingot"
+  },
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "result": {
+    "id": "minecraft:golden_helmet",
+    "components": {
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "Defense: 10",
+          "color": "green",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": {
+        "aote_armor_lore": "1b"
+      }
+    }
+  }
+}
