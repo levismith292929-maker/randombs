@@ -3,12 +3,19 @@
   "show_notification": true,
   "category": "misc",
   "pattern": [
-    "d d",
-    "d  "
+    "ebe",
+    "bsb",
+    "ebe"
   ],
   "key": {
-    "d": [
-      "minecraft:dirt"
+    "e": [
+      "minecraft:ender_pearl"
+    ],
+    "s": [
+      "minecraft:nether_star"
+    ],
+    "b": [
+      "minecraft:dragon_breath"
     ]
   },
   "result": {
