@@ -1,6 +1,7 @@
 # Everyone can discover and craft every custom recipe.
 
 # Ability effects
+execute as @e[type=marker,tag=soul_whip_beam] at @s run function aote:soul_whip/beam_tick
 execute as @e[type=marker,tag=aote_ore_scan] at @s run function aote:ore_tracker/scan_tick
 execute as @e[type=marker,tag=aote_breath] at @s run function aote:dragon/breath_tick
 execute as @a at @s run function aote:tick_player
