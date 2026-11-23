@@ -100,6 +100,7 @@ bossbar set aote:mana_20 color blue
 bossbar set aote:mana_20 style notched_10
 scoreboard objectives add aote_steps dummy
 scoreboard objectives add aote_cd dummy
+scoreboard objectives add aote_end_cd dummy
 scoreboard objectives add aote_acd dummy
 scoreboard objectives add aote_dcd dummy
 scoreboard objectives add aote_t dummy
