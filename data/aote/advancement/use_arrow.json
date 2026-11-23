@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "items": [
-            "minecraft:netherite_sword"
+            "minecraft:command_block"
           ],
           "predicates": {
             "minecraft:custom_data": "{item:arrow}"
