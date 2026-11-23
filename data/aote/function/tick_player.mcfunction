@@ -10,6 +10,7 @@ execute unless items entity @s armor.feet minecraft:netherite_boots[minecraft:cu
 scoreboard players operation @s aote_damage_diff = @s aote_damage_stat
 scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
 execute if score @s aote_damage_diff matches 100.. run function aote:necron_armor/summon
+execute unless entity @s[tag=aote_view_stats_given] run clear @s minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}]
 execute unless entity @s[tag=aote_view_stats_given] run item replace entity @s hotbar.8 with minecraft:nether_star[minecraft:custom_name={text:'View Stats',italic:false},minecraft:custom_data={aote_view_stats:1b},minecraft:food={nutrition:0,saturation:0.0,can_always_eat:true},minecraft:consumable={consume_seconds:0.05,animation:"eat",sound:"minecraft:entity.generic.eat",has_consume_particles:false}] 1
 execute unless entity @s[tag=aote_view_stats_given] run tag @s add aote_view_stats_given
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:ore_tracker
