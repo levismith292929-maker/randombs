@@ -8,6 +8,6 @@ scoreboard players operation @s aote_mana -= @s aote_cost
 scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
 tp @s ^ ^ ^5
-# Clear any carried momentum without applying Slow Falling.
-tp @s ~ ~ ~
+# Reset momentum at the player's NEW position, without Slow Falling.
+execute at @s run tp @s ~ ~ ~
 scoreboard players set @s aote_end_cd 4
