@@ -1,0 +1,51 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "replace": true,
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "aote:weapon/diamond_sword_damage",
+        "amount": 14,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "aote:weapon/diamond_sword_strength",
+        "amount": 0.08,
+        "operation": "add_multiplied_base",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "aote:weapon/diamond_sword_speed",
+        "amount": -2.4,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "text": "Damage: 14",
+        "color": "red",
+        "italic": false
+      },
+      {
+        "text": "Strength: 8",
+        "color": "red",
+        "italic": false
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "aote_stat_item": "1b"
+    }
+  }
+]
