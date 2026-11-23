@@ -128,3 +128,9 @@ scoreboard objectives add aote_arrow_age dummy
 scoreboard objectives add aote_damage_stat minecraft.custom:minecraft.damage_taken
 scoreboard objectives add aote_damage_base dummy
 scoreboard objectives add aote_damage_diff dummy
+
+scoreboard objectives add aote_ore_cd dummy
+scoreboard objectives add aote_ore_scan dummy
+scoreboard objectives add aote_ore_x dummy
+scoreboard objectives add aote_ore_y dummy
+scoreboard objectives add aote_ore_z dummy
