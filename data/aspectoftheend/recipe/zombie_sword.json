@@ -61,7 +61,8 @@
         }
       ],
       "minecraft:unbreakable": {},
-      "minecraft:attribute_modifiers": []
+      "minecraft:attribute_modifiers": [],
+      "minecraft:item_model": "minecraft:golden_sword"
     }
   }
 }
