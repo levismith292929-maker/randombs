@@ -1,4 +1,3 @@
-advancement revoke @s only aote:use
 execute if score @s aote_end_cd matches 1.. run return 0
 scoreboard players set @s aote_cost 35
 scoreboard players operation @s aote_cost += @s aote_cost_bonus
@@ -8,6 +7,6 @@ scoreboard players operation @s aote_mana -= @s aote_cost
 scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
 tp @s ^ ^ ^5
-# Reset any remaining vertical momentum after the teleport.
-tp @s ~ ~ ~
+# Brief slow falling prevents downward speed from building up between teleports.
+effect give @s minecraft:slow_falling 1 0 true
 scoreboard players set @s aote_end_cd 2
