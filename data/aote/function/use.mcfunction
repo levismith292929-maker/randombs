@@ -8,4 +8,6 @@ scoreboard players operation @s aote_mana -= @s aote_cost
 scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
 tp @s ^ ^ ^5
+# Reset any remaining vertical momentum after the teleport.
+tp @s ~ ~ ~
 scoreboard players set @s aote_end_cd 2
