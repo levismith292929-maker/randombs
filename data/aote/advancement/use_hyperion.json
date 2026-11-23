@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "items": [
-            "minecraft:repeating_command_block"
+            "minecraft:wooden_sword"
           ],
           "predicates": {
             "minecraft:custom_data": "{item:hyperion}"
