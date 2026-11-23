@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:fishing_rod"],
+          "predicates": {
+            "minecraft:custom_data": "{item:soul_whip}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "aote:soul_whip/use"
+  }
+}
