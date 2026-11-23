@@ -10,6 +10,7 @@ execute unless items entity @s armor.feet minecraft:netherite_boots[minecraft:cu
 scoreboard players operation @s aote_damage_diff = @s aote_damage_stat
 scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
 execute if score @s aote_damage_diff matches 100.. run function aote:necron_armor/summon
+execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:soul_whip
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:ore_tracker
 recipe give @s aspectoftheend:aote
 recipe give @s aspectoftheend:aotv
@@ -66,6 +67,7 @@ scoreboard players add @s aote_tcd 0
 scoreboard players add @s aote_zcd 0
 scoreboard players add @s aote_ncd 0
 scoreboard players add @s aote_ore_cd 0
+scoreboard players add @s aote_sw_cd 0
 execute if score @s aote_cd matches 1.. run scoreboard players remove @s aote_cd 1
 execute if score @s aote_end_cd matches 1.. run scoreboard players remove @s aote_end_cd 1
 execute if score @s aote_acd matches 1.. run scoreboard players remove @s aote_acd 1
@@ -74,6 +76,9 @@ execute if score @s aote_tcd matches 1.. run scoreboard players remove @s aote_t
 execute if score @s aote_zcd matches 1.. run scoreboard players remove @s aote_zcd 1
 execute if score @s aote_ncd matches 1.. run scoreboard players remove @s aote_ncd 1
 execute if score @s aote_ore_cd matches 1.. run scoreboard players remove @s aote_ore_cd 1
+execute if score @s aote_sw_cd matches 1.. run scoreboard players remove @s aote_sw_cd 1
+execute if items entity @s weapon.mainhand minecraft:fishing_rod[minecraft:custom_data~{item:soul_whip}] if score @s aote_sw_cd matches 0 run title @s actionbar {"text":"Soul Whip: READY","color":"green"}
+execute if items entity @s weapon.mainhand minecraft:fishing_rod[minecraft:custom_data~{item:soul_whip}] if score @s aote_sw_cd matches 1.. run title @s actionbar [{"text":"Soul Whip: "},{"score":{"name":"@s","objective":"aote_sw_cd"}},{"text":" ticks","color":"yellow"}]
 execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 0 run title @s actionbar {"text":"Ore Tracker: READY","color":"green"}
 execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 1.. run title @s actionbar [{"text":"Ore Tracker: "},{"score":{"name":"@s","objective":"aote_ore_cd"}},{"text":" ticks","color":"yellow"}]
 execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aote}] if score @s aote_end_cd matches 0 run title @s actionbar {"text":"AOTE: READY","color":"green"}
