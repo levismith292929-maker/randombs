@@ -10,7 +10,8 @@ execute unless items entity @s armor.feet minecraft:netherite_boots[minecraft:cu
 scoreboard players operation @s aote_damage_diff = @s aote_damage_stat
 scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
 execute if score @s aote_damage_diff matches 100.. run function aote:necron_armor/summon
-execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:soul_whip
+execute unless entity @s[tag=aote_soul_whip_recipe_unlocked] run recipe give @s aspectoftheend:soul_whip
+execute unless entity @s[tag=aote_soul_whip_recipe_unlocked] run tag @s add aote_soul_whip_recipe_unlocked
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:ore_tracker
 recipe give @s aspectoftheend:aote
 recipe give @s aspectoftheend:aotv
