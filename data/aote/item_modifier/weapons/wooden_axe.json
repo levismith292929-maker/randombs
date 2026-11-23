@@ -1,0 +1,51 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "replace": true,
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "aote:weapon/wooden_axe_damage",
+        "amount": 8,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "aote:weapon/wooden_axe_strength",
+        "amount": 0,
+        "operation": "add_multiplied_base",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "aote:weapon/wooden_axe_speed",
+        "amount": -3.2,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "text": "Damage: 8",
+        "color": "red",
+        "italic": false
+      },
+      {
+        "text": "Strength: 0",
+        "color": "red",
+        "italic": false
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "aote_stat_item": "1b"
+    }
+  }
+]
