@@ -1,0 +1,13 @@
+particle minecraft:soul_fire_flame ^ ^ ^1 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-0.1 ^2 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-0.3 ^3 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-0.6 ^4 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-1 ^5 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-1.5 ^6 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-2.1 ^7 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-2.8 ^8 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-3.6 ^9 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-4.5 ^10 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-5.5 ^11 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-6.6 ^12 0 0 0 0 1 force
+particle minecraft:soul_fire_flame ^ ^-7.8 ^13 0 0 0 0 1 force
