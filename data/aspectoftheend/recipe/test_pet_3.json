@@ -3,13 +3,19 @@
   "show_notification": true,
   "category": "misc",
   "pattern": [
-    "d  ",
-    "d  ",
-    "ddd"
+    "ngn",
+    "gsg",
+    "ngn"
   ],
   "key": {
-    "d": [
-      "minecraft:dirt"
+    "n": [
+      "minecraft:netherite_ingot"
+    ],
+    "g": [
+      "minecraft:gold_block"
+    ],
+    "s": [
+      "minecraft:nether_star"
     ]
   },
   "result": {
@@ -56,7 +62,7 @@
         "properties": [
           {
             "name": "textures",
-            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmU5ZjliMWZjMDE0MTY2Y2I0NmEwOTNlNTM0OWIyYmY2ZWRkMjAxYjY4MGQ2MmU0OGRiZjNhZjliMDQ1OTExNiJ9fX0="
+            "value": "eyJ0ZXh0dXJlcyI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJlOWY5YjFmYzAxNDE2NmNiNDZhMDkzZTUzNDliMmJmNmVkZDIwMWI2ODBkNjJlNDhkYmYzYWY5YjA0NTkxMTYifX0="
           }
         ]
       }
