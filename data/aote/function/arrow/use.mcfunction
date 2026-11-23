@@ -12,5 +12,5 @@ scoreboard players operation @s aote_mana -= @s aote_cost
 scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
 execute anchored eyes positioned ^ ^-0.1 ^0.5 rotated as @s summon minecraft:marker run function aote:arrow/init
-scoreboard players set @s aote_dcd 12
+scoreboard players set @s aote_dcd 30
 
