@@ -1,4 +1,6 @@
 advancement revoke @s only aote:use
+# Refresh the AOTE immediately so its short use animation never consumes it.
+item replace entity @s weapon.mainhand with minecraft:diamond_sword[minecraft:custom_data={item:"aote"},minecraft:custom_name='{"text":"Aspect of the End","italic":false}',minecraft:enchantment_glint_override=true,minecraft:lore=['{"text":"Ability: Instant Transmission  RIGHT CLICK","color":"gold","italic":false}','{"text":"Teleports you 5 blocks in the direction","color":"gray","italic":false}','{"text":"you are facing.","color":"gray","italic":false}','{"text":"Mana Cost: 35","color":"blue","italic":false}','{"text":"Cooldown: 2 ticks","color":"blue","italic":false}'],minecraft:consumable={consume_seconds:0.05,animation:"none",has_consume_particles:false}]
 execute if score @s aote_end_cd matches 1.. run return 0
 scoreboard players set @s aote_cost 35
 scoreboard players operation @s aote_cost += @s aote_cost_bonus
