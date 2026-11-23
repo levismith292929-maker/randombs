@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "show_notification": false,
-  "category": "misc",
+  "category": "equipment",
   "pattern": [
     "d d",
     "ddd",
