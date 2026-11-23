@@ -3,13 +3,16 @@
   "show_notification": true,
   "category": "misc",
   "pattern": [
-    "d",
-    "d",
-    "d"
+    "ddd",
+    "dsd",
+    "ddd"
   ],
   "key": {
     "d": [
-      "minecraft:dirt"
+      "minecraft:ender_pearl"
+    ],
+    "s": [
+      "minecraft:nether_star"
     ]
   },
   "result": {
