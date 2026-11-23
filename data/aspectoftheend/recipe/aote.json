@@ -3,16 +3,16 @@
   "show_notification": true,
   "category": "misc",
   "pattern": [
-    "eee",
-    "ede",
-    "eee"
+    " e ",
+    "ese",
+    " e "
   ],
   "key": {
+    "s": [
+      "minecraft:diamond_sword"
+    ],
     "e": [
       "minecraft:ender_eye"
-    ],
-    "d": [
-      "minecraft:diamond_sword"
     ]
   },
   "result": {
