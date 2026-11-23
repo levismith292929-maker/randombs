@@ -153,7 +153,6 @@ scoreboard objectives add aote_stat_effective dummy
 scoreboard objectives add aote_stat_total_strength dummy
 scoreboard objectives add aote_stat_health_display dummy
 scoreboard objectives add aote_stat_max_display dummy
-scoreboard objectives add aote_stat_temp dummy
 scoreboard objectives add aote_stat_vanilla_health dummy
 scoreboard objectives add aote_stat_const dummy
 scoreboard players set #ten aote_stat_const 10
