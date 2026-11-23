@@ -6,5 +6,4 @@ execute as @a at @s run function aote:tick_player
 execute as @e[type=marker,tag=aote_arrow_volley] at @s run function aote:arrow/volley_tick
 execute as @e[type=marker,tag=aote_orb] at @s run function aote:astraea/orb_tick
 execute as @e[type=marker,tag=necron_scythe_slash] at @s run function aote:necrons_scythe/slash_tick
-# Keep the arrow's client-side position in sync after setting Motion.
 execute as @e[type=minecraft:arrow,tag=aote_arrow_flight] store result entity @s Air short 1 run time query gametime
