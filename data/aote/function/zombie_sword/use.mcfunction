@@ -5,11 +5,8 @@ execute unless score @s aote_mana matches 50.. run return 0
 scoreboard players remove @s aote_mana 50
 scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
-execute store result score @s aote_zhealth run data get entity @s Health 10
-execute store result score @s aote_zmax run attribute @s minecraft:max_health get 10
-scoreboard players add @s aote_zhealth 20
-execute if score @s aote_zhealth > @s aote_zmax run scoreboard players operation @s aote_zhealth = @s aote_zmax
-execute store result entity @s Health float 0.1 run scoreboard players get @s aote_zhealth
+# Regeneration II for 3 seconds restores exactly 1 heart (2 health points).
+effect give @s minecraft:regeneration 3 1 true
 scoreboard players set @s aote_zcd 20
 playsound minecraft:entity.zombie_villager.cure player @s ~ ~ ~ 0.7 1.4
 
