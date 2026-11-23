@@ -87,7 +87,7 @@ scoreboard players operation @s aote_stat_total_strength = @s aote_stat_strength
 scoreboard players operation @s aote_stat_total_strength += @s aote_stat_armor_strength
 execute store success score @s aote_stat_temp run attribute @s minecraft:attack_damage modifier remove aote:player_strength
 execute store result storage aote:macro strength double 0.005 run scoreboard players get @s aote_stat_total_strength
-function aote:stats/apply_strength with storage aote:macro
+execute if items entity @s weapon.mainhand #aote:stat_weapons[minecraft:custom_data~{aote_stat_item:"1b"}] run function aote:stats/apply_strength with storage aote:macro
 # Convert incoming damage into custom Health using the Defense reduction formula.
 scoreboard players operation @s aote_stat_damage_diff = @s aote_damage_stat
 scoreboard players operation @s aote_stat_damage_diff -= @s aote_stat_damage_base
