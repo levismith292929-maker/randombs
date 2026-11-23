@@ -28,10 +28,10 @@ scoreboard players operation @s aote_stat_deaths_base = @s aote_stat_deaths
 # Recalculate Defense and armor Strength from equipped armor.
 scoreboard players set @s aote_stat_defense 0
 scoreboard players set @s aote_stat_armor_strength 0
-execute if items entity @s armor.head #aote:armor_head unless items entity @s armor.head #aote:armor_head[minecraft:attribute_modifiers=[]] run item modify entity @s armor.head aote:strip_armor_attributes
-execute if items entity @s armor.chest #aote:armor_chest unless items entity @s armor.chest #aote:armor_chest[minecraft:attribute_modifiers=[]] run item modify entity @s armor.chest aote:strip_armor_attributes
-execute if items entity @s armor.legs #aote:armor_legs unless items entity @s armor.legs #aote:armor_legs[minecraft:attribute_modifiers=[]] run item modify entity @s armor.legs aote:strip_armor_attributes
-execute if items entity @s armor.feet #aote:armor_feet unless items entity @s armor.feet #aote:armor_feet[minecraft:attribute_modifiers=[]] run item modify entity @s armor.feet aote:strip_armor_attributes
+execute if items entity @s armor.head #aote:armor_head unless items entity @s armor.head #aote:armor_head[minecraft:custom_data~{aote_armor_stripped:"1b"}] run item modify entity @s armor.head aote:strip_armor_attributes
+execute if items entity @s armor.chest #aote:armor_chest unless items entity @s armor.chest #aote:armor_chest[minecraft:custom_data~{aote_armor_stripped:"1b"}] run item modify entity @s armor.chest aote:strip_armor_attributes
+execute if items entity @s armor.legs #aote:armor_legs unless items entity @s armor.legs #aote:armor_legs[minecraft:custom_data~{aote_armor_stripped:"1b"}] run item modify entity @s armor.legs aote:strip_armor_attributes
+execute if items entity @s armor.feet #aote:armor_feet unless items entity @s armor.feet #aote:armor_feet[minecraft:custom_data~{aote_armor_stripped:"1b"}] run item modify entity @s armor.feet aote:strip_armor_attributes
 execute if items entity @s armor.head minecraft:leather_helmet run scoreboard players add @s aote_stat_defense 5
 execute if items entity @s armor.head minecraft:copper_helmet run scoreboard players add @s aote_stat_defense 9
 execute if items entity @s armor.head minecraft:golden_helmet run scoreboard players add @s aote_stat_defense 10
