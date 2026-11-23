@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "#minecraft:iron_tool_materials"
+  },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "id": "minecraft:iron_axe",
+    "components": {
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "aote:weapon/iron_axe_damage",
+          "amount": 14,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_damage",
+          "id": "aote:weapon/iron_axe_strength",
+          "amount": 0.02,
+          "operation": "add_multiplied_base",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "aote:weapon/iron_axe_speed",
+          "amount": -3.1,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "Damage: 14",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Strength: 2",
+          "color": "red",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": {
+        "aote_stat_item": "1b"
+      }
+    }
+  }
+}
