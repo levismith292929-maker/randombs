@@ -59,7 +59,8 @@
           "italic": false
         }
       ],
-      "minecraft:unbreakable": {}
+      "minecraft:unbreakable": {},
+      "minecraft:attribute_modifiers": []
     }
   }
 }
