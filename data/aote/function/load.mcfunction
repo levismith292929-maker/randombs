@@ -123,3 +123,4 @@ team add aote_necron_guard
 tellraw @a "Random bullshit I came of with has loaded v1"
 scoreboard objectives add aote_vec dummy
 scoreboard objectives add aote_hit_t dummy
+scoreboard objectives add aote_arrow_age dummy
