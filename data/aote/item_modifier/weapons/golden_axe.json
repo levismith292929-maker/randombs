@@ -1,0 +1,51 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "replace": true,
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "aote:weapon/golden_axe_damage",
+        "amount": 12,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "aote:weapon/golden_axe_strength",
+        "amount": 0.06,
+        "operation": "add_multiplied_base",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "aote:weapon/golden_axe_speed",
+        "amount": -3,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "text": "Damage: 12",
+        "color": "red",
+        "italic": false
+      },
+      {
+        "text": "Strength: 6",
+        "color": "red",
+        "italic": false
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "aote_stat_item": "1b"
+    }
+  }
+]
