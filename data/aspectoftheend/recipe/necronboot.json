@@ -3,12 +3,12 @@
   "show_notification": true,
   "category": "misc",
   "pattern": [
-    "d d",
-    "d d"
+    "s s",
+    "s s"
   ],
   "key": {
-    "d": [
-      "minecraft:dirt"
+    "s": [
+      "minecraft:netherite_scrap"
     ]
   },
   "result": {
