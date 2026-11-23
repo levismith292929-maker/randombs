@@ -78,8 +78,8 @@ execute if score @s aote_zcd matches 1.. run scoreboard players remove @s aote_z
 execute if score @s aote_ncd matches 1.. run scoreboard players remove @s aote_ncd 1
 execute if score @s aote_ore_cd matches 1.. run scoreboard players remove @s aote_ore_cd 1
 execute if score @s aote_sw_cd matches 1.. run scoreboard players remove @s aote_sw_cd 1
-execute if items entity @s weapon.mainhand minecraft:fishing_rod[minecraft:custom_data~{item:soul_whip}] if score @s aote_sw_cd matches 0 run title @s actionbar {"text":"Soul Whip: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:fishing_rod[minecraft:custom_data~{item:soul_whip}] if score @s aote_sw_cd matches 1.. run title @s actionbar [{"text":"Soul Whip: "},{"score":{"name":"@s","objective":"aote_sw_cd"}},{"text":" ticks","color":"yellow"}]
+execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:soul_whip}] if score @s aote_sw_cd matches 0 run title @s actionbar {"text":"Soul Whip: READY","color":"green"}
+execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:soul_whip}] if score @s aote_sw_cd matches 1.. run title @s actionbar [{"text":"Soul Whip: "},{"score":{"name":"@s","objective":"aote_sw_cd"}},{"text":" ticks","color":"yellow"}]
 execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 0 run title @s actionbar {"text":"Ore Tracker: READY","color":"green"}
 execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 1.. run title @s actionbar [{"text":"Ore Tracker: "},{"score":{"name":"@s","objective":"aote_ore_cd"}},{"text":" ticks","color":"yellow"}]
 execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aote}] if score @s aote_end_cd matches 0 run title @s actionbar {"text":"AOTE: READY","color":"green"}
