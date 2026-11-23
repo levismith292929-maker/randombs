@@ -1,7 +1,3 @@
-# Detect instant right-clicks with the AOTE (carrot-on-a-stick base, sword appearance).
-scoreboard players add @s aote_aote_used 0
-execute if score @s aote_aote_used matches 1.. if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_data~{item:aote}] run function aote:use
-scoreboard players set @s aote_aote_used 0
 scoreboard players add @s aote_damage_stat 0
 scoreboard players add @s aote_damage_base 0
 execute unless entity @s[tag=aote_necron_damage_init] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
@@ -80,8 +76,8 @@ execute if score @s aote_ncd matches 1.. run scoreboard players remove @s aote_n
 execute if score @s aote_ore_cd matches 1.. run scoreboard players remove @s aote_ore_cd 1
 execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 0 run title @s actionbar {"text":"Ore Tracker: READY","color":"green"}
 execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 1.. run title @s actionbar [{"text":"Ore Tracker: "},{"score":{"name":"@s","objective":"aote_ore_cd"}},{"text":" ticks","color":"yellow"}]
-execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_data~{item:aote}] if score @s aote_end_cd matches 0 run title @s actionbar {"text":"AOTE: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_data~{item:aote}] if score @s aote_end_cd matches 1.. run title @s actionbar [{"text":"AOTE: "},{"score":{"name":"@s","objective":"aote_end_cd"}},{"text":" ticks","color":"yellow"}]
+execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aote}] if score @s aote_end_cd matches 0 run title @s actionbar {"text":"AOTE: READY","color":"green"}
+execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aote}] if score @s aote_end_cd matches 1.. run title @s actionbar [{"text":"AOTE: "},{"score":{"name":"@s","objective":"aote_end_cd"}},{"text":" ticks","color":"yellow"}]
 execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aotv}] if score @s aote_cd matches 0 run title @s actionbar {"text":"AOTV: READY","color":"green"}
 execute if items entity @s weapon.mainhand minecraft:diamond_sword[minecraft:custom_data~{item:aotv}] if score @s aote_cd matches 1.. run title @s actionbar [{"text":"AOTV: "},{"score":{"name":"@s","objective":"aote_cd"}},{"text":" ticks","color":"yellow"}]
 execute if items entity @s weapon.mainhand minecraft:repeating_command_block[minecraft:custom_data~{item:hyperion}] if score @s aote_cd matches 0 run title @s actionbar {"text":"Hyperion: READY","color":"green"}
