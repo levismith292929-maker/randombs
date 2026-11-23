@@ -15,6 +15,7 @@ scoreboard players add @s aote_stat_total_strength 0
 scoreboard players add @s aote_stat_health_display 0
 scoreboard players add @s aote_stat_max_display 0
 scoreboard players add @s aote_stat_temp 0
+scoreboard players add @s aote_stat_vanilla_health 0
 execute unless entity @s[tag=aote_stats_init] run scoreboard players set @s aote_stat_health 1000
 execute unless entity @s[tag=aote_stats_init] run scoreboard players set @s aote_stat_max_health 1000
 execute unless entity @s[tag=aote_stats_init] run scoreboard players set @s aote_stat_strength 0
@@ -95,4 +96,5 @@ scoreboard players operation @s aote_stat_damage_base = @s aote_damage_stat
 # The custom Health pool is authoritative; vanilla health is a large reserve only.
 attribute @s minecraft:max_health base set 1024
 execute if score @s aote_stat_health matches ..0 run kill @s
-execute if score @s aote_stat_health matches 1.. run data modify entity @s Health set value 1024.0f
+execute if score @s aote_stat_health matches 1.. store result score @s aote_stat_vanilla_health run data get entity @s Health 10
+execute if score @s aote_stat_health matches 1.. if score @s aote_stat_vanilla_health matches ..10239 run effect give @s minecraft:instant_health 1 255 true
