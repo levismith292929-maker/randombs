@@ -56,7 +56,8 @@
         "animation": "none",
         "has_consume_particles": false
       },
-      "minecraft:unbreakable": {}
+      "minecraft:unbreakable": {},
+      "minecraft:attribute_modifiers": []
     }
   }
 }
