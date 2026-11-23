@@ -6,6 +6,10 @@ execute unless items entity @s armor.head minecraft:wither_skeleton_skull[minecr
 execute unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
 execute unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
 execute unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
+# Check accumulated Necron damage every tick, after the damage statistic has updated.
+scoreboard players operation @s aote_damage_diff = @s aote_damage_stat
+scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
+execute if score @s aote_damage_diff matches 100.. run function aote:necron_armor/summon
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aote
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aotd
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aspect_arrow
