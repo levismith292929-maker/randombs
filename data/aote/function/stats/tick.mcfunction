@@ -97,4 +97,4 @@ scoreboard players operation @s aote_stat_damage_base = @s aote_damage_stat
 attribute @s minecraft:max_health base set 1024
 execute if score @s aote_stat_health matches ..0 run kill @s
 execute if score @s aote_stat_health matches 1.. store result score @s aote_stat_vanilla_health run data get entity @s Health 10
-execute if score @s aote_stat_health matches 1.. if score @s aote_stat_vanilla_health matches ..10239 run effect give @s minecraft:instant_health 1 255 true
+execute if score @s aote_stat_health matches 1.. if score @s aote_stat_vanilla_health matches ..10239 run effect give @s minecraft:instant_health 1 8 true
