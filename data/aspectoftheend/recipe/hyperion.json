@@ -16,7 +16,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:repeating_command_block",
+    "id": "minecraft:wooden_sword",
     "count": 1,
     "components": {
       "minecraft:custom_data": {
@@ -55,7 +55,8 @@
         "consume_seconds": 10000,
         "animation": "none",
         "has_consume_particles": false
-      }
+      },
+      "minecraft:unbreakable": {}
     }
   }
 }
