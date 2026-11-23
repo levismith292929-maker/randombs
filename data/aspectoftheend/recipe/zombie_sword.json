@@ -22,7 +22,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:golden_sword",
+    "id": "minecraft:wooden_sword",
     "count": 1,
     "components": {
       "minecraft:custom_data": {
@@ -59,7 +59,8 @@
           "color": "blue",
           "italic": false
         }
-      ]
+      ],
+      "minecraft:unbreakable": {}
     }
   }
 }
