@@ -2,27 +2,65 @@
   "type": "minecraft:crafting_shaped",
   "show_notification": true,
   "category": "misc",
-  "pattern": ["csc"],
+  "pattern": [
+    "ccc",
+    "csc",
+    "ccc"
+  ],
   "key": {
-    "c": ["minecraft:crying_obsidian"],
-    "s": ["minecraft:diamond_sword"]
+    "c": [
+      "minecraft:enchanted_golden_apple"
+    ],
+    "s": [
+      "minecraft:diamond_sword"
+    ]
   },
   "result": {
     "id": "minecraft:command_block",
     "count": 1,
     "components": {
-      "minecraft:custom_data": {"item": "astraea"},
-      "minecraft:custom_name": {"text": "Astraea", "color": "light_purple", "italic": false},
+      "minecraft:custom_data": {
+        "item": "astraea"
+      },
+      "minecraft:custom_name": {
+        "text": "Astraea",
+        "color": "light_purple",
+        "italic": false
+      },
       "minecraft:lore": [
-        {"text": "Ability: Wither Shield  RIGHT CLICK", "color": "gold", "italic": false},
-        {"text": "Right-click to take less damage and gain an", "color": "gray", "italic": false},
-        {"text": "absorption shield for 10 seconds, with wither", "color": "gray", "italic": false},
-        {"text": "orbs spinning around you.", "color": "gray", "italic": false},
-        {"text": "Mana Cost: 40", "color": "blue", "italic": false}
+        {
+          "text": "Ability: Wither Shield  RIGHT CLICK",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "Right-click to take less damage and gain an",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "absorption shield for 10 seconds, with wither",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "orbs spinning around you.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Mana Cost: 40",
+          "color": "blue",
+          "italic": false
+        }
       ],
-      "minecraft:item_model": "minecraft:iron_sword",
+      "minecraft:item_model": "minecraft:copper_sword",
       "minecraft:enchantment_glint_override": true,
-      "minecraft:consumable": {"consume_seconds": 10000, "animation": "none", "has_consume_particles": false}
+      "minecraft:consumable": {
+        "consume_seconds": 10000,
+        "animation": "none",
+        "has_consume_particles": false
+      }
     }
   }
 }
