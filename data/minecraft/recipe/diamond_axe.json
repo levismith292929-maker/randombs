@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "#minecraft:diamond_tool_materials"
+  },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "id": "minecraft:diamond_axe",
+    "components": {
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "aote:weapon/diamond_axe_damage",
+          "amount": 17,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_damage",
+          "id": "aote:weapon/diamond_axe_strength",
+          "amount": 0.04,
+          "operation": "add_multiplied_base",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "aote:weapon/diamond_axe_speed",
+          "amount": -3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "Damage: 17",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Strength: 4",
+          "color": "red",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": {
+        "aote_stat_item": "1b"
+      }
+    }
+  }
+}
