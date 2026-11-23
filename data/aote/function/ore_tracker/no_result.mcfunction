@@ -1,0 +1,1 @@
+tellraw @s {"text":"No diamond ore or ancient debris found within 32 blocks in this dimension.","color":"red"}
