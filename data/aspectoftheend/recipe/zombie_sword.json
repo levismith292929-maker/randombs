@@ -3,27 +3,62 @@
   "show_notification": true,
   "category": "equipment",
   "pattern": [
-    "d",
-    "d",
-    "s"
+    "gfg",
+    "dsd",
+    "gfg"
   ],
   "key": {
-    "d": ["minecraft:dirt"],
-    "s": ["minecraft:stick"]
+    "g": [
+      "minecraft:gold_ingot"
+    ],
+    "s": [
+      "minecraft:diamond_sword"
+    ],
+    "f": [
+      "minecraft:rotten_flesh"
+    ],
+    "d": [
+      "minecraft:raw_gold_block"
+    ]
   },
   "result": {
     "id": "minecraft:golden_sword",
     "count": 1,
     "components": {
-      "minecraft:custom_data": {"item": "zombie_sword"},
-      "minecraft:custom_name": {"text": "Zombie Sword", "italic": false},
+      "minecraft:custom_data": {
+        "item": "zombie_sword"
+      },
+      "minecraft:custom_name": {
+        "text": "Zombie Sword",
+        "italic": false
+      },
       "minecraft:enchantment_glint_override": true,
-      "minecraft:consumable": {"consume_seconds": 10000, "animation": "none", "has_consume_particles": false},
+      "minecraft:consumable": {
+        "consume_seconds": 10000,
+        "animation": "none",
+        "has_consume_particles": false
+      },
       "minecraft:lore": [
-        {"text": "Ability: Instant Healing  RIGHT CLICK", "color": "gold", "italic": false},
-        {"text": "Instantly heals 1 heart.", "color": "gray", "italic": false},
-        {"text": "Mana Cost: 50", "color": "blue", "italic": false},
-        {"text": "Cooldown: 1 second", "color": "blue", "italic": false}
+        {
+          "text": "Ability: Instant Healing  RIGHT CLICK",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "Instantly heals 1 heart.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Mana Cost: 50",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "Cooldown: 1 second",
+          "color": "blue",
+          "italic": false
+        }
       ]
     }
   }
