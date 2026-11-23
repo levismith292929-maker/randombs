@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:netherite_tool_materials",
+  "base": "minecraft:diamond_axe",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "result": {
+    "id": "minecraft:netherite_axe",
+    "components": {
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "aote:weapon/netherite_axe_damage",
+          "amount": 19,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_damage",
+          "id": "aote:weapon/netherite_axe_strength",
+          "amount": 0.06,
+          "operation": "add_multiplied_base",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "aote:weapon/netherite_axe_speed",
+          "amount": -3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "Damage: 19",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Strength: 6",
+          "color": "red",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": {
+        "aote_stat_item": "1b"
+      }
+    }
+  }
+}
