@@ -1,0 +1,24 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "text": "Defense: 8",
+        "color": "green",
+        "italic": false
+      },
+      {
+        "text": "Strength: 3",
+        "color": "red",
+        "italic": false
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "aote_armor_lore": "1b"
+    }
+  }
+]
