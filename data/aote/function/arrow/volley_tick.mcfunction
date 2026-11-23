@@ -1,5 +1,5 @@
 # Move the volley marker to the player's current eye position each tick.
-execute at @p anchored eyes run tp @s ^ ^-0.1 ^0.5
+execute at @p anchored eyes positioned ^ ^-0.1 ^0.5 run tp @s ~ ~ ~
 
 # Refresh the volley marker's rotation every tick so each pair uses the player's current look direction.
 data modify entity @s Rotation set from entity @p Rotation
