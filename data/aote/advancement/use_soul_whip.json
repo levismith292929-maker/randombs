@@ -4,7 +4,7 @@
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
-          "items": ["minecraft:fishing_rod"],
+          "items": ["minecraft:command_block"],
           "predicates": {
             "minecraft:custom_data": "{item:soul_whip}"
           }
