@@ -10,4 +10,4 @@ scoreboard players set @s aote_mana_regen 0
 tp @s ^ ^ ^5
 # Brief slow falling prevents downward speed from building up between teleports.
 effect give @s minecraft:slow_falling 1 0 true
-scoreboard players set @s aote_end_cd 2
+scoreboard players set @s aote_end_cd 4
