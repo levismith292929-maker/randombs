@@ -10,6 +10,7 @@ execute unless items entity @s armor.feet minecraft:netherite_boots[minecraft:cu
 scoreboard players operation @s aote_damage_diff = @s aote_damage_stat
 scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
 execute if score @s aote_damage_diff matches 100.. run function aote:necron_armor/summon
+function aote:stats/tick
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:ore_tracker
 recipe give @s aspectoftheend:aote
 recipe give @s aspectoftheend:aotv
@@ -66,7 +67,6 @@ scoreboard players add @s aote_tcd 0
 scoreboard players add @s aote_zcd 0
 scoreboard players add @s aote_ncd 0
 scoreboard players add @s aote_ore_cd 0
-scoreboard players add @s aote_sw_cd 0
 execute if score @s aote_cd matches 1.. run scoreboard players remove @s aote_cd 1
 execute if score @s aote_end_cd matches 1.. run scoreboard players remove @s aote_end_cd 1
 execute if score @s aote_acd matches 1.. run scoreboard players remove @s aote_acd 1
@@ -75,27 +75,9 @@ execute if score @s aote_tcd matches 1.. run scoreboard players remove @s aote_t
 execute if score @s aote_zcd matches 1.. run scoreboard players remove @s aote_zcd 1
 execute if score @s aote_ncd matches 1.. run scoreboard players remove @s aote_ncd 1
 execute if score @s aote_ore_cd matches 1.. run scoreboard players remove @s aote_ore_cd 1
-execute if score @s aote_sw_cd matches 1.. run scoreboard players remove @s aote_sw_cd 1
-execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 0 run title @s actionbar {"text":"Ore Tracker: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:ore_tracker}] if score @s aote_ore_cd matches 1.. run title @s actionbar [{"text":"Ore Tracker: "},{"score":{"name":"@s","objective":"aote_ore_cd"}},{"text":" ticks","color":"yellow"}]
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:aote}] if score @s aote_end_cd matches 0 run title @s actionbar {"text":"AOTE: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:aote}] if score @s aote_end_cd matches 1.. run title @s actionbar [{"text":"AOTE: "},{"score":{"name":"@s","objective":"aote_end_cd"}},{"text":" ticks","color":"yellow"}]
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:aotv}] if score @s aote_cd matches 0 run title @s actionbar {"text":"AOTV: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:aotv}] if score @s aote_cd matches 1.. run title @s actionbar [{"text":"AOTV: "},{"score":{"name":"@s","objective":"aote_cd"}},{"text":" ticks","color":"yellow"}]
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:hyperion}] if score @s aote_cd matches 0 run title @s actionbar {"text":"Hyperion: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:hyperion}] if score @s aote_cd matches 1.. run title @s actionbar [{"text":"Hyperion: "},{"score":{"name":"@s","objective":"aote_cd"}},{"text":" ticks","color":"yellow"}]
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:astraea}] if score @s aote_acd matches 0 run title @s actionbar {"text":"Astraea: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:astraea}] if score @s aote_acd matches 1.. run title @s actionbar [{"text":"Astraea: "},{"score":{"name":"@s","objective":"aote_acd"}},{"text":" ticks","color":"yellow"}]
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:dragon}] if score @s aote_dcd matches 0 run title @s actionbar {"text":"AOTD: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:dragon}] if score @s aote_dcd matches 1.. run title @s actionbar [{"text":"AOTD: "},{"score":{"name":"@s","objective":"aote_dcd"}},{"text":" ticks","color":"yellow"}]
-execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:arrow}] if score @s aote_dcd matches 0 run title @s actionbar {"text":"AOTA: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:arrow}] if score @s aote_dcd matches 1.. run title @s actionbar [{"text":"AOTA: "},{"score":{"name":"@s","objective":"aote_dcd"}},{"text":" ticks","color":"yellow"}]
-execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:necrons_scythe}] if score @s aote_tcd matches 0 run title @s actionbar {"text":"Necron's Scythe: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:command_block[minecraft:custom_data~{item:necrons_scythe}] if score @s aote_tcd matches 1.. run title @s actionbar [{"text":"Necron's Scythe: "},{"score":{"name":"@s","objective":"aote_tcd"}},{"text":" ticks","color":"yellow"}]
+function aote:stats/hud
 execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:aotv}] run function aote:preview/start
 
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 0 run title @s actionbar {"text":"Zombie Sword: READY","color":"green"}
-execute if items entity @s weapon.mainhand minecraft:wooden_sword[minecraft:custom_data~{item:zombie_sword}] if score @s aote_zcd matches 1.. run title @s actionbar [{"text":"Zombie Sword: "},{"score":{"name":"@s","objective":"aote_zcd"}},{"text":" ticks","color":"yellow"}]
 execute if score @s aote_uid matches 1 run bossbar set aote:mana_1 players @s
 execute if score @s aote_uid matches 1 store result bossbar aote:mana_1 max run scoreboard players get @s aote_mana_max
 execute if score @s aote_uid matches 1 store result bossbar aote:mana_1 value run scoreboard players get @s aote_mana
