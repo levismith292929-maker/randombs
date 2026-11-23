@@ -135,3 +135,6 @@ scoreboard objectives add aote_ore_scan dummy
 scoreboard objectives add aote_ore_x dummy
 scoreboard objectives add aote_ore_y dummy
 scoreboard objectives add aote_ore_z dummy
+
+scoreboard objectives add aote_sw_cd dummy
+scoreboard objectives add aote_sw_t dummy
