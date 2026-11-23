@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "items": [
-            "minecraft:diamond_sword"
+            "minecraft:wooden_sword"
           ],
           "predicates": {
             "minecraft:custom_data": "{item:aote}"
