@@ -1,5 +1,13 @@
-{
-  "function": "minecraft:set_attributes",
-  "modifiers": [],
-  "replace": true
-}
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "aote_armor_stripped": "1b"
+    }
+  }
+]
