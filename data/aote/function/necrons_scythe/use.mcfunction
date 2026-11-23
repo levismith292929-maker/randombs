@@ -2,7 +2,7 @@
 advancement revoke @s only aote:use_necrons_scythe
 
 
-# Necron's Scythe: 35 mana and a 1.25-second cooldown.
+# Necron's Scythe: 35 mana and a 0.75-second cooldown.
 execute if score @s aote_tcd matches 1.. run return 0
 scoreboard players set @s aote_cost 35
 scoreboard players operation @s aote_cost += @s aote_cost_bonus
@@ -11,7 +11,7 @@ execute unless score @s aote_mana >= @s aote_cost run return 0
 scoreboard players operation @s aote_mana -= @s aote_cost
 scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
-scoreboard players set @s aote_tcd 25
+scoreboard players set @s aote_tcd 15
 
 # Start a straight end-rod slash three blocks ahead.
 kill @e[type=marker,tag=necron_scythe_slash]
