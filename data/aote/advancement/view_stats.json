@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:nether_star"],
+          "predicates": {
+            "minecraft:custom_data": "{aote_view_stats:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "aote:stats/view"
+  }
+}
