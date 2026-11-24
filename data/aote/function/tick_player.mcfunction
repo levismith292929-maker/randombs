@@ -98,6 +98,15 @@ execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s
 execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:superior_dragon_leggings
 execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:superior_dragon_boots
 tag @s add aote_dragon_recipes_unlocked_v2
+# Dedicated one-time unlock for all Dragon Boots recipes, including players who already received the older Dragon recipe unlock.
+execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:old_dragon_boots
+execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:protector_dragon_boots
+execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:strong_dragon_boots
+execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:superior_dragon_boots
+execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:unstable_dragon_boots
+execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:wise_dragon_boots
+execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:young_dragon_boots
+tag @s add aote_dragon_boots_recipes_unlocked_v1
 tag @s add aote_recipes_unlocked
 scoreboard players add #aote_uid_counter aote_uid 0
 execute unless score @s aote_uid matches 1.. run scoreboard players add #aote_uid_counter aote_uid 1
