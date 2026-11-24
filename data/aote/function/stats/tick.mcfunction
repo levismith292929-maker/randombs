@@ -205,6 +205,10 @@ execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:cu
 execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 10
 execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 10
 # Apply the Intelligence bonus to maximum Mana, keeping current Mana unchanged.
+execute if items entity @s armor.head minecraft:leather_helmet[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_crit_damage 29
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_crit_damage 29
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_crit_damage 29
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_crit_damage 29
 scoreboard players operation @s aote_stat_necron_int_diff = @s aote_stat_necron_int
 scoreboard players operation @s aote_stat_necron_int_diff -= @s aote_stat_necron_int_prev
 scoreboard players operation @s aote_mana_max += @s aote_stat_necron_int_diff
