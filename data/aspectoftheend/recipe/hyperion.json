@@ -16,7 +16,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:wooden_sword",
+    "id": "minecraft:iron_sword",
     "count": 1,
     "components": {
       "minecraft:custom_data": {
@@ -49,7 +49,6 @@
           "italic": false
         }
       ],
-      "minecraft:item_model": "minecraft:repeating_command_block",
       "minecraft:enchantment_glint_override": true,
       "minecraft:consumable": {
         "consume_seconds": 10000,

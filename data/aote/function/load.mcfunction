@@ -102,7 +102,6 @@ scoreboard objectives add aote_steps dummy
 scoreboard objectives add aote_cd dummy
 scoreboard objectives add aote_end_cd dummy
 scoreboard objectives add aote_acd dummy
-scoreboard objectives add aote_dcd dummy
 scoreboard objectives add aote_t dummy
 scoreboard objectives add aote_tcd dummy
 scoreboard objectives add aote_slash_t dummy
@@ -122,9 +121,6 @@ scoreboard objectives add aote_ncd dummy
 scoreboard objectives add aote_uid dummy
 team add aote_necron_guard
 tellraw @a "Random bullshit I came of with has loaded v1"
-scoreboard objectives add aote_vec dummy
-scoreboard objectives add aote_hit_t dummy
-scoreboard objectives add aote_arrow_age dummy
 
 scoreboard objectives add aote_damage_stat minecraft.custom:minecraft.damage_taken
 scoreboard objectives add aote_damage_base dummy

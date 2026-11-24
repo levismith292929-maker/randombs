@@ -55,7 +55,6 @@ execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoft
 recipe give @s aspectoftheend:aote
 recipe give @s aspectoftheend:aotv
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aotd
-execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:aspect_arrow
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necrons_scythe
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:hyperion
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:astraea
