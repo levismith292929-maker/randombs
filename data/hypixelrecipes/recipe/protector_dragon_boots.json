@@ -10,12 +10,40 @@
     "f": [
       "hypixel:protector_dragon_fragment"
     ],
+    "a": [
+      "minecraft:diamond_boots"
+    ],
     "n": [
       "minecraft:netherite_scrap"
     ]
   },
   "result": {
-    "id": "hypixelrecipe:protector_dragon_boots",
-    "count": 1
+    "id": "minecraft:diamond_boots",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Protector Dragon Boots",
+        "color": "#55FF55",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "item": "protector_dragon_boots",
+        "dragon_armor": "1b",
+        "aote_armor_lore": "1b"
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:lore": [
+        {
+          "text": "Health: 26",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Defense: 115",
+          "color": "green",
+          "italic": false
+        }
+      ]
+    }
   }
 }

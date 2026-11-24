@@ -11,18 +11,43 @@
     "f": [
       "hypixel:old_dragon_fragment"
     ],
-    "d": [
-      "minecraft:diamond"
-    ],
     "a": [
       "minecraft:diamond_chestplate"
     ],
     "n": [
       "minecraft:netherite_scrap"
+    ],
+    "d": [
+      "minecraft:diamond"
     ]
   },
   "result": {
-    "id": "hypixelrecipe:old_dragon_chestplate",
-    "count": 1
+    "id": "minecraft:diamond_chestplate",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Old Dragon Chestplate",
+        "color": "#AAAAAA",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "item": "old_dragon_chestplate",
+        "dragon_armor": "1b",
+        "aote_armor_lore": "1b"
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:lore": [
+        {
+          "text": "Health: 64",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Defense: 160",
+          "color": "green",
+          "italic": false
+        }
+      ]
+    }
   }
 }

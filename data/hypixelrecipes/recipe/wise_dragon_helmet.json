@@ -18,7 +18,37 @@
     ]
   },
   "result": {
-    "id": "hypixelrecipe:wise_dragon_helmet",
-    "count": 1
+    "id": "minecraft:diamond_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Wise Dragon Helmet",
+        "color": "#AA00AA",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "item": "wise_dragon_helmet",
+        "dragon_armor": "1b",
+        "aote_armor_lore": "1b"
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:lore": [
+        {
+          "text": "Health: 30",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Defense: 110",
+          "color": "green",
+          "italic": false
+        },
+        {
+          "text": "Intelligence: 125",
+          "color": "aqua",
+          "italic": false
+        }
+      ]
+    }
   }
 }

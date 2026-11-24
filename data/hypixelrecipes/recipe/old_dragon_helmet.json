@@ -18,7 +18,32 @@
     ]
   },
   "result": {
-    "id": "hypixelrecipe:old_dragon_helmet",
-    "count": 1
+    "id": "minecraft:diamond_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Old Dragon Helmet",
+        "color": "#AAAAAA",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "item": "old_dragon_helmet",
+        "dragon_armor": "1b",
+        "aote_armor_lore": "1b"
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:lore": [
+        {
+          "text": "Health: 39",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Defense: 110",
+          "color": "green",
+          "italic": false
+        }
+      ]
+    }
   }
 }

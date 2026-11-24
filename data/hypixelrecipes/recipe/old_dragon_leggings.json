@@ -11,18 +11,43 @@
     "f": [
       "hypixel:old_dragon_fragment"
     ],
-    "d": [
-      "minecraft:diamond"
-    ],
     "a": [
       "minecraft:diamond_leggings"
     ],
     "n": [
       "minecraft:netherite_scrap"
+    ],
+    "d": [
+      "minecraft:diamond"
     ]
   },
   "result": {
-    "id": "hypixelrecipe:old_dragon_leggings",
-    "count": 1
+    "id": "minecraft:diamond_leggings",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Old Dragon Leggings",
+        "color": "#AAAAAA",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "item": "old_dragon_leggings",
+        "dragon_armor": "1b",
+        "aote_armor_lore": "1b"
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:lore": [
+        {
+          "text": "Health: 56",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Defense: 140",
+          "color": "green",
+          "italic": false
+        }
+      ]
+    }
   }
 }

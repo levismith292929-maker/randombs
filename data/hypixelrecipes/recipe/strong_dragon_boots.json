@@ -10,12 +10,45 @@
     "f": [
       "hypixel:strong_dragon_fragment"
     ],
+    "a": [
+      "minecraft:diamond_boots"
+    ],
     "n": [
       "minecraft:netherite_scrap"
     ]
   },
   "result": {
-    "id": "hypixelrecipe:strong_dragon_boots",
-    "count": 1
+    "id": "minecraft:diamond_boots",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Strong Dragon Boots",
+        "color": "#FF5555",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "item": "strong_dragon_boots",
+        "dragon_armor": "1b",
+        "aote_armor_lore": "1b"
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:lore": [
+        {
+          "text": "Health: 26",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Defense: 90",
+          "color": "green",
+          "italic": false
+        },
+        {
+          "text": "Strength: 25",
+          "color": "red",
+          "italic": false
+        }
+      ]
+    }
   }
 }

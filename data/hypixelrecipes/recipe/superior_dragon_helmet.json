@@ -18,7 +18,42 @@
     ]
   },
   "result": {
-    "id": "hypixelrecipe:superior_dragon_helmet",
-    "count": 1
+    "id": "minecraft:diamond_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Superior Dragon Helmet",
+        "color": "#FFAA00",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "item": "superior_dragon_helmet",
+        "dragon_armor": "1b",
+        "aote_armor_lore": "1b"
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:lore": [
+        {
+          "text": "Health: 39",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Defense: 130",
+          "color": "green",
+          "italic": false
+        },
+        {
+          "text": "Strength: 10",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Intelligence: 25",
+          "color": "aqua",
+          "italic": false
+        }
+      ]
+    }
   }
 }
