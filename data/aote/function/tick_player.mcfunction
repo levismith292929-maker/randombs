@@ -2,10 +2,10 @@ scoreboard players add @s aote_damage_stat 0
 scoreboard players add @s aote_damage_base 0
 execute unless entity @s[tag=aote_necron_damage_init] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
 tag @s add aote_necron_damage_init
-execute unless items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
-execute unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
-execute unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
-execute unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
+execute unless items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] unless items entity @s armor.head #hypixel:necron_helmets run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
+execute unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] unless items entity @s armor.chest #hypixel:necron_chestplates run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
+execute unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] unless items entity @s armor.legs #hypixel:necron_leggings run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
+execute unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] unless items entity @s armor.feet #hypixel:necron_boots run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
 # Check accumulated Necron damage every tick, after the damage statistic has updated.
 scoreboard players operation @s aote_damage_diff = @s aote_damage_stat
 scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
@@ -58,55 +58,12 @@ execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoft
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necrons_scythe
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:hyperion
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:astraea
-execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necronboot
-execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necronhelm
-execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necronchest
-execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:necronlegs
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:test_pet_1
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:test_pet_2
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:test_pet_3
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:iron_golem_pet
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:pet_remover
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:zombie_sword
-# Unlock every Dragon Armor recipe once per player.
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:old_dragon_helmet
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:old_dragon_chestplate
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:old_dragon_leggings
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:old_dragon_boots
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:protector_dragon_helmet
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:protector_dragon_chestplate
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:protector_dragon_leggings
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:protector_dragon_boots
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:wise_dragon_helmet
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:wise_dragon_chestplate
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:wise_dragon_leggings
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:wise_dragon_boots
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:young_dragon_helmet
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:young_dragon_chestplate
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:young_dragon_leggings
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:young_dragon_boots
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:strong_dragon_helmet
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:strong_dragon_chestplate
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:strong_dragon_leggings
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:strong_dragon_boots
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:unstable_dragon_helmet
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:unstable_dragon_chestplate
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:unstable_dragon_leggings
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:unstable_dragon_boots
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:superior_dragon_helmet
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:superior_dragon_chestplate
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:superior_dragon_leggings
-execute unless entity @s[tag=aote_dragon_recipes_unlocked_v2] run recipe give @s hypixelrecipes:superior_dragon_boots
-tag @s add aote_dragon_recipes_unlocked_v2
-# Dedicated one-time unlock for all Dragon Boots recipes, including players who already received the older Dragon recipe unlock.
-execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:old_dragon_boots
-execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:protector_dragon_boots
-execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:strong_dragon_boots
-execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:superior_dragon_boots
-execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:unstable_dragon_boots
-execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:wise_dragon_boots
-execute unless entity @s[tag=aote_dragon_boots_recipes_unlocked_v1] run recipe give @s hypixelrecipes:young_dragon_boots
-tag @s add aote_dragon_boots_recipes_unlocked_v1
 tag @s add aote_recipes_unlocked
 scoreboard players add #aote_uid_counter aote_uid 0
 execute unless score @s aote_uid matches 1.. run scoreboard players add #aote_uid_counter aote_uid 1
