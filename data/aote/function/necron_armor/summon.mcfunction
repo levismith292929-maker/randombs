@@ -1,5 +1,5 @@
 advancement revoke @s only aote:necron_armor_hit
-execute unless items entity @s armor.head minecraft:leather_helmet[minecraft:custom_data~{item:necron}] run return 0
+execute unless items entity @s armor.head minecraft:leather_helmet[minecraft:custom_data~{item:necron}] unless items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] unless items entity @s armor.head #hypixel:necron_helmets run return 0
 execute unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] unless items entity @s armor.chest #hypixel:necron_chestplates run return 0
 execute unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] unless items entity @s armor.legs #hypixel:necron_leggings run return 0
 execute unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] unless items entity @s armor.feet #hypixel:necron_boots run return 0
