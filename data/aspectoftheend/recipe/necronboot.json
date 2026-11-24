@@ -41,6 +41,11 @@
       "minecraft:unbreakable": {},
       "minecraft:lore": [
         {
+          "text": "Health: 123",
+          "color": "red",
+          "italic": false
+        },
+        {
           "text": "Defense: 42",
           "color": "green",
           "italic": false

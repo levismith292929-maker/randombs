@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "show_notification": true,
+  "category": "misc",
+  "pattern": [
+    "n n",
+    "faf",
+    "dfd"
+  ],
+  "key": {
+    "f": [
+      "hypixel:protector_dragon_fragment"
+    ],
+    "d": [
+      "minecraft:diamond"
+    ],
+    "a": [
+      "minecraft:diamond_chestplate"
+    ],
+    "n": [
+      "minecraft:netherite_scrap"
+    ]
+  },
+  "result": {
+    "id": "hypixelrecipe:protector_dragon_chestplate",
+    "count": 1
+  }
+}

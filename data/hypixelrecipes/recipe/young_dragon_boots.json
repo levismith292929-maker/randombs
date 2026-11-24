@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "show_notification": true,
+  "category": "misc",
+  "pattern": [
+    "n n",
+    "f f"
+  ],
+  "key": {
+    "f": [
+      "hypixel:young_dragon_fragment"
+    ],
+    "n": [
+      "minecraft:netherite_scrap"
+    ]
+  },
+  "result": {
+    "id": "hypixelrecipe:young_dragon_boots",
+    "count": 1
+  }
+}

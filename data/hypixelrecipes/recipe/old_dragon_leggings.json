@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "show_notification": true,
+  "category": "misc",
+  "pattern": [
+    "nan",
+    "f f",
+    "d d"
+  ],
+  "key": {
+    "f": [
+      "hypixel:old_dragon_fragment"
+    ],
+    "d": [
+      "minecraft:diamond"
+    ],
+    "a": [
+      "minecraft:diamond_leggings"
+    ],
+    "n": [
+      "minecraft:netherite_scrap"
+    ]
+  },
+  "result": {
+    "id": "hypixelrecipe:old_dragon_leggings",
+    "count": 1
+  }
+}
