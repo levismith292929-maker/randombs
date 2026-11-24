@@ -1,5 +1,7 @@
 # External player stats, vanilla armor conversion, and vanilla weapon stats.
 scoreboard players add @s aote_stat_health 0
+scoreboard players set @s aote_stat_crit_chance 5
+scoreboard players set @s aote_stat_crit_damage 0
 scoreboard players add @s aote_stat_max_health 0
 scoreboard players add @s aote_stat_strength 0
 scoreboard players add @s aote_stat_armor_strength 0
@@ -64,10 +66,6 @@ execute if items entity @s armor.head minecraft:player_head[minecraft:custom_dat
 execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:superior_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 640
 execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:superior_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 560
 execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 340
-execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_health 500
-execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_health 650
-execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_health 550
-execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_health 350
 # Custom mod armor Health, including the 0-3 star multipliers.
 execute if items entity @s armor.head hypixel:old_dragon_helmet run scoreboard players add @s aote_stat_armor_health 390
 execute if items entity @s armor.head hypixel:old_dragon_helmet_1star run scoreboard players add @s aote_stat_armor_health 429
@@ -181,22 +179,6 @@ execute if items entity @s armor.feet hypixel:young_dragon_boots run scoreboard 
 execute if items entity @s armor.feet hypixel:young_dragon_boots_1star run scoreboard players add @s aote_stat_armor_health 286
 execute if items entity @s armor.feet hypixel:young_dragon_boots_2star run scoreboard players add @s aote_stat_armor_health 325
 execute if items entity @s armor.feet hypixel:young_dragon_boots_3star run scoreboard players add @s aote_stat_armor_health 377
-execute if items entity @s armor.head hypixel:necron_helmet run scoreboard players add @s aote_stat_armor_health 500
-execute if items entity @s armor.head hypixel:necron_helmet_1star run scoreboard players add @s aote_stat_armor_health 550
-execute if items entity @s armor.head hypixel:necron_helmet_2star run scoreboard players add @s aote_stat_armor_health 625
-execute if items entity @s armor.head hypixel:necron_helmet_3star run scoreboard players add @s aote_stat_armor_health 725
-execute if items entity @s armor.chest hypixel:necron_chestplate run scoreboard players add @s aote_stat_armor_health 650
-execute if items entity @s armor.chest hypixel:necron_chestplate_1star run scoreboard players add @s aote_stat_armor_health 715
-execute if items entity @s armor.chest hypixel:necron_chestplate_2star run scoreboard players add @s aote_stat_armor_health 813
-execute if items entity @s armor.chest hypixel:necron_chestplate_3star run scoreboard players add @s aote_stat_armor_health 943
-execute if items entity @s armor.legs hypixel:necron_leggings run scoreboard players add @s aote_stat_armor_health 550
-execute if items entity @s armor.legs hypixel:necron_leggings_1star run scoreboard players add @s aote_stat_armor_health 605
-execute if items entity @s armor.legs hypixel:necron_leggings_2star run scoreboard players add @s aote_stat_armor_health 688
-execute if items entity @s armor.legs hypixel:necron_leggings_3star run scoreboard players add @s aote_stat_armor_health 798
-execute if items entity @s armor.feet hypixel:necron_boots run scoreboard players add @s aote_stat_armor_health 350
-execute if items entity @s armor.feet hypixel:necron_boots_1star run scoreboard players add @s aote_stat_armor_health 385
-execute if items entity @s armor.feet hypixel:necron_boots_2star run scoreboard players add @s aote_stat_armor_health 438
-execute if items entity @s armor.feet hypixel:necron_boots_3star run scoreboard players add @s aote_stat_armor_health 508
 scoreboard players operation @s aote_stat_armor_health_diff = @s aote_stat_armor_health
 scoreboard players operation @s aote_stat_armor_health_diff -= @s aote_stat_armor_health_prev
 scoreboard players operation @s aote_stat_max_health += @s aote_stat_armor_health_diff
@@ -234,44 +216,64 @@ execute if items entity @s armor.feet minecraft:iron_boots unless items entity @
 execute if items entity @s armor.feet minecraft:diamond_boots unless items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{aote_armor_lore:"1b"}] run item modify entity @s armor.feet aote:armor/diamond_boots
 execute if items entity @s armor.feet minecraft:netherite_boots unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{aote_armor_lore:"1b"}] run item modify entity @s armor.feet aote:armor/netherite_boots
 scoreboard players set @s aote_stat_defense 0
+execute if items entity @s armor.head hypixel:unstable_dragon_helmet run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.head hypixel:unstable_dragon_helmet run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.head hypixel:unstable_dragon_helmet_1star run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.head hypixel:unstable_dragon_helmet_1star run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.head hypixel:unstable_dragon_helmet_2star run scoreboard players add @s aote_stat_crit_chance 5
+execute if items entity @s armor.head hypixel:unstable_dragon_helmet_2star run scoreboard players add @s aote_stat_crit_damage 5
+execute if items entity @s armor.head hypixel:unstable_dragon_helmet_3star run scoreboard players add @s aote_stat_crit_chance 6
+execute if items entity @s armor.head hypixel:unstable_dragon_helmet_3star run scoreboard players add @s aote_stat_crit_damage 6
+execute if items entity @s armor.chest hypixel:unstable_dragon_chestplate run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.chest hypixel:unstable_dragon_chestplate run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.chest hypixel:unstable_dragon_chestplate_1star run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.chest hypixel:unstable_dragon_chestplate_1star run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.chest hypixel:unstable_dragon_chestplate_2star run scoreboard players add @s aote_stat_crit_chance 5
+execute if items entity @s armor.chest hypixel:unstable_dragon_chestplate_2star run scoreboard players add @s aote_stat_crit_damage 5
+execute if items entity @s armor.chest hypixel:unstable_dragon_chestplate_3star run scoreboard players add @s aote_stat_crit_chance 6
+execute if items entity @s armor.chest hypixel:unstable_dragon_chestplate_3star run scoreboard players add @s aote_stat_crit_damage 6
+execute if items entity @s armor.legs hypixel:unstable_dragon_leggings run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.legs hypixel:unstable_dragon_leggings run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.legs hypixel:unstable_dragon_leggings_1star run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.legs hypixel:unstable_dragon_leggings_1star run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.legs hypixel:unstable_dragon_leggings_2star run scoreboard players add @s aote_stat_crit_chance 5
+execute if items entity @s armor.legs hypixel:unstable_dragon_leggings_2star run scoreboard players add @s aote_stat_crit_damage 5
+execute if items entity @s armor.legs hypixel:unstable_dragon_leggings_3star run scoreboard players add @s aote_stat_crit_chance 6
+execute if items entity @s armor.legs hypixel:unstable_dragon_leggings_3star run scoreboard players add @s aote_stat_crit_damage 6
+execute if items entity @s armor.feet hypixel:unstable_dragon_boots run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.feet hypixel:unstable_dragon_boots run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.feet hypixel:unstable_dragon_boots_1star run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.feet hypixel:unstable_dragon_boots_1star run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.feet hypixel:unstable_dragon_boots_2star run scoreboard players add @s aote_stat_crit_chance 5
+execute if items entity @s armor.feet hypixel:unstable_dragon_boots_2star run scoreboard players add @s aote_stat_crit_damage 5
+execute if items entity @s armor.feet hypixel:unstable_dragon_boots_3star run scoreboard players add @s aote_stat_crit_chance 6
+execute if items entity @s armor.feet hypixel:unstable_dragon_boots_3star run scoreboard players add @s aote_stat_crit_damage 6
 scoreboard players set @s aote_stat_armor_strength 0
 scoreboard players set @s aote_stat_necron_int 0
-execute if items entity @s armor.head #aote:armor_head unless items entity @s armor.head #aote:armor_head[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run item modify entity @s armor.head aote:strip_armor_attributes
-execute if items entity @s armor.chest #aote:armor_chest unless items entity @s armor.chest #aote:armor_chest[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run item modify entity @s armor.chest aote:strip_armor_attributes
-execute if items entity @s armor.legs #aote:armor_legs unless items entity @s armor.legs #aote:armor_legs[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run item modify entity @s armor.legs aote:strip_armor_attributes
-execute if items entity @s armor.feet #aote:armor_feet unless items entity @s armor.feet #aote:armor_feet[minecraft:custom_data~{aote_armor_stripped:"1b"}] unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run item modify entity @s armor.feet aote:strip_armor_attributes
-execute if items entity @s armor.head minecraft:leather_helmet unless items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 5
 execute if items entity @s armor.head minecraft:copper_helmet run scoreboard players add @s aote_stat_defense 9
 execute if items entity @s armor.head minecraft:golden_helmet run scoreboard players add @s aote_stat_defense 10
 execute if items entity @s armor.head minecraft:chainmail_helmet run scoreboard players add @s aote_stat_defense 11
 execute if items entity @s armor.head minecraft:chainmail_helmet run scoreboard players add @s aote_stat_armor_strength 4
 execute if items entity @s armor.head minecraft:iron_helmet run scoreboard players add @s aote_stat_defense 13
 execute if items entity @s armor.head minecraft:diamond_helmet unless items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 17
-execute if items entity @s armor.head minecraft:netherite_helmet unless items entity @s armor.head minecraft:wither_skeleton_skull[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 23
-execute if items entity @s armor.chest minecraft:leather_chestplate unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{dragon_armor:"1b"}] unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 10
 execute if items entity @s armor.chest minecraft:copper_chestplate run scoreboard players add @s aote_stat_defense 17
 execute if items entity @s armor.chest minecraft:golden_chestplate run scoreboard players add @s aote_stat_defense 18
 execute if items entity @s armor.chest minecraft:chainmail_chestplate run scoreboard players add @s aote_stat_defense 19
 execute if items entity @s armor.chest minecraft:chainmail_chestplate run scoreboard players add @s aote_stat_armor_strength 8
 execute if items entity @s armor.chest minecraft:iron_chestplate run scoreboard players add @s aote_stat_defense 21
 execute if items entity @s armor.chest minecraft:diamond_chestplate unless items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 30
-execute if items entity @s armor.chest minecraft:netherite_chestplate unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 36
-execute if items entity @s armor.legs minecraft:leather_leggings unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{dragon_armor:"1b"}] unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 7
 execute if items entity @s armor.legs minecraft:copper_leggings run scoreboard players add @s aote_stat_defense 14
 execute if items entity @s armor.legs minecraft:golden_leggings run scoreboard players add @s aote_stat_defense 15
 execute if items entity @s armor.legs minecraft:chainmail_leggings run scoreboard players add @s aote_stat_defense 16
 execute if items entity @s armor.legs minecraft:chainmail_leggings run scoreboard players add @s aote_stat_armor_strength 6
 execute if items entity @s armor.legs minecraft:iron_leggings run scoreboard players add @s aote_stat_defense 18
 execute if items entity @s armor.legs minecraft:diamond_leggings unless items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 24
-execute if items entity @s armor.legs minecraft:netherite_leggings unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 30
-execute if items entity @s armor.feet minecraft:leather_boots unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{dragon_armor:"1b"}] unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 3
 execute if items entity @s armor.feet minecraft:copper_boots run scoreboard players add @s aote_stat_defense 6
 execute if items entity @s armor.feet minecraft:golden_boots run scoreboard players add @s aote_stat_defense 7
 execute if items entity @s armor.feet minecraft:chainmail_boots run scoreboard players add @s aote_stat_defense 8
 execute if items entity @s armor.feet minecraft:chainmail_boots run scoreboard players add @s aote_stat_armor_strength 3
 execute if items entity @s armor.feet minecraft:iron_boots run scoreboard players add @s aote_stat_defense 10
 execute if items entity @s armor.feet minecraft:diamond_boots unless items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 13
-execute if items entity @s armor.feet minecraft:netherite_boots unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 19
 # Dragon armor stats.
 execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:old_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
 execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:old_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
@@ -319,18 +321,6 @@ execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_d
 execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_armor_strength 10
 execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_necron_int 25
 # Necron armor bonuses: full set now exceeds every Dragon set in Health, Defense, Strength, and Intelligence.
-execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 150
-execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 200
-execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 175
-execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 125
-execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_strength 38
-execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_strength 38
-execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_strength 38
-execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_strength 38
-execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 90
-execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 90
-execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 90
-execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 90
 # Custom mod armor Defense, Strength, and Intelligence, including star multipliers.
 execute if items entity @s armor.head hypixel:old_dragon_helmet run scoreboard players add @s aote_stat_defense 110
 execute if items entity @s armor.head hypixel:old_dragon_helmet_1star run scoreboard players add @s aote_stat_defense 121
@@ -512,54 +502,6 @@ execute if items entity @s armor.feet hypixel:young_dragon_boots run scoreboard 
 execute if items entity @s armor.feet hypixel:young_dragon_boots_1star run scoreboard players add @s aote_stat_defense 99
 execute if items entity @s armor.feet hypixel:young_dragon_boots_2star run scoreboard players add @s aote_stat_defense 113
 execute if items entity @s armor.feet hypixel:young_dragon_boots_3star run scoreboard players add @s aote_stat_defense 131
-execute if items entity @s armor.head hypixel:necron_helmet run scoreboard players add @s aote_stat_defense 150
-execute if items entity @s armor.head hypixel:necron_helmet run scoreboard players add @s aote_stat_armor_strength 38
-execute if items entity @s armor.head hypixel:necron_helmet run scoreboard players add @s aote_stat_necron_int 90
-execute if items entity @s armor.head hypixel:necron_helmet_1star run scoreboard players add @s aote_stat_defense 165
-execute if items entity @s armor.head hypixel:necron_helmet_1star run scoreboard players add @s aote_stat_armor_strength 42
-execute if items entity @s armor.head hypixel:necron_helmet_1star run scoreboard players add @s aote_stat_necron_int 99
-execute if items entity @s armor.head hypixel:necron_helmet_2star run scoreboard players add @s aote_stat_defense 188
-execute if items entity @s armor.head hypixel:necron_helmet_2star run scoreboard players add @s aote_stat_armor_strength 48
-execute if items entity @s armor.head hypixel:necron_helmet_2star run scoreboard players add @s aote_stat_necron_int 113
-execute if items entity @s armor.head hypixel:necron_helmet_3star run scoreboard players add @s aote_stat_defense 218
-execute if items entity @s armor.head hypixel:necron_helmet_3star run scoreboard players add @s aote_stat_armor_strength 55
-execute if items entity @s armor.head hypixel:necron_helmet_3star run scoreboard players add @s aote_stat_necron_int 131
-execute if items entity @s armor.chest hypixel:necron_chestplate run scoreboard players add @s aote_stat_defense 200
-execute if items entity @s armor.chest hypixel:necron_chestplate run scoreboard players add @s aote_stat_armor_strength 38
-execute if items entity @s armor.chest hypixel:necron_chestplate run scoreboard players add @s aote_stat_necron_int 90
-execute if items entity @s armor.chest hypixel:necron_chestplate_1star run scoreboard players add @s aote_stat_defense 220
-execute if items entity @s armor.chest hypixel:necron_chestplate_1star run scoreboard players add @s aote_stat_armor_strength 42
-execute if items entity @s armor.chest hypixel:necron_chestplate_1star run scoreboard players add @s aote_stat_necron_int 99
-execute if items entity @s armor.chest hypixel:necron_chestplate_2star run scoreboard players add @s aote_stat_defense 250
-execute if items entity @s armor.chest hypixel:necron_chestplate_2star run scoreboard players add @s aote_stat_armor_strength 48
-execute if items entity @s armor.chest hypixel:necron_chestplate_2star run scoreboard players add @s aote_stat_necron_int 113
-execute if items entity @s armor.chest hypixel:necron_chestplate_3star run scoreboard players add @s aote_stat_defense 290
-execute if items entity @s armor.chest hypixel:necron_chestplate_3star run scoreboard players add @s aote_stat_armor_strength 55
-execute if items entity @s armor.chest hypixel:necron_chestplate_3star run scoreboard players add @s aote_stat_necron_int 131
-execute if items entity @s armor.legs hypixel:necron_leggings run scoreboard players add @s aote_stat_defense 175
-execute if items entity @s armor.legs hypixel:necron_leggings run scoreboard players add @s aote_stat_armor_strength 38
-execute if items entity @s armor.legs hypixel:necron_leggings run scoreboard players add @s aote_stat_necron_int 90
-execute if items entity @s armor.legs hypixel:necron_leggings_1star run scoreboard players add @s aote_stat_defense 193
-execute if items entity @s armor.legs hypixel:necron_leggings_1star run scoreboard players add @s aote_stat_armor_strength 42
-execute if items entity @s armor.legs hypixel:necron_leggings_1star run scoreboard players add @s aote_stat_necron_int 99
-execute if items entity @s armor.legs hypixel:necron_leggings_2star run scoreboard players add @s aote_stat_defense 219
-execute if items entity @s armor.legs hypixel:necron_leggings_2star run scoreboard players add @s aote_stat_armor_strength 48
-execute if items entity @s armor.legs hypixel:necron_leggings_2star run scoreboard players add @s aote_stat_necron_int 113
-execute if items entity @s armor.legs hypixel:necron_leggings_3star run scoreboard players add @s aote_stat_defense 254
-execute if items entity @s armor.legs hypixel:necron_leggings_3star run scoreboard players add @s aote_stat_armor_strength 55
-execute if items entity @s armor.legs hypixel:necron_leggings_3star run scoreboard players add @s aote_stat_necron_int 131
-execute if items entity @s armor.feet hypixel:necron_boots run scoreboard players add @s aote_stat_defense 125
-execute if items entity @s armor.feet hypixel:necron_boots run scoreboard players add @s aote_stat_armor_strength 38
-execute if items entity @s armor.feet hypixel:necron_boots run scoreboard players add @s aote_stat_necron_int 90
-execute if items entity @s armor.feet hypixel:necron_boots_1star run scoreboard players add @s aote_stat_defense 138
-execute if items entity @s armor.feet hypixel:necron_boots_1star run scoreboard players add @s aote_stat_armor_strength 42
-execute if items entity @s armor.feet hypixel:necron_boots_1star run scoreboard players add @s aote_stat_necron_int 99
-execute if items entity @s armor.feet hypixel:necron_boots_2star run scoreboard players add @s aote_stat_defense 156
-execute if items entity @s armor.feet hypixel:necron_boots_2star run scoreboard players add @s aote_stat_armor_strength 48
-execute if items entity @s armor.feet hypixel:necron_boots_2star run scoreboard players add @s aote_stat_necron_int 113
-execute if items entity @s armor.feet hypixel:necron_boots_3star run scoreboard players add @s aote_stat_defense 181
-execute if items entity @s armor.feet hypixel:necron_boots_3star run scoreboard players add @s aote_stat_armor_strength 55
-execute if items entity @s armor.feet hypixel:necron_boots_3star run scoreboard players add @s aote_stat_necron_int 131
 # Apply the Intelligence bonus to maximum Mana, keeping current Mana unchanged.
 scoreboard players operation @s aote_stat_necron_int_diff = @s aote_stat_necron_int
 scoreboard players operation @s aote_stat_necron_int_diff -= @s aote_stat_necron_int_prev
