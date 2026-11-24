@@ -164,6 +164,7 @@ scoreboard players set #hundred aote_stat_const 100
 scoreboard objectives add aote_stat_damage_display dummy
 
 scoreboard objectives add aote_stat_necron_int dummy
+scoreboard objectives add aote_stat_crit_damage dummy
 scoreboard objectives add aote_stat_necron_int_prev dummy
 scoreboard objectives add aote_stat_necron_int_diff dummy
 scoreboard objectives add aote_stat_mana_regen_display dummy
