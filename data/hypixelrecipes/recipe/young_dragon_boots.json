@@ -4,14 +4,11 @@
   "category": "misc",
   "pattern": [
     "n n",
-    "faf"
+    "f f"
   ],
   "key": {
     "f": [
       "hypixel:young_dragon_fragment"
-    ],
-    "a": [
-      "minecraft:diamond_boots"
     ],
     "n": [
       "minecraft:netherite_scrap"
