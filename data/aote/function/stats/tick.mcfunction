@@ -198,10 +198,10 @@ execute if items entity @s armor.head minecraft:player_head[minecraft:custom_dat
 execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_strength 38
 execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_strength 38
 execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_armor_strength 38
-execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 80
-execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 80
-execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 80
-execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 80
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 90
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 90
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 90
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_necron_int 90
 # Apply the Intelligence bonus to maximum Mana, keeping current Mana unchanged.
 scoreboard players operation @s aote_stat_necron_int_diff = @s aote_stat_necron_int
 scoreboard players operation @s aote_stat_necron_int_diff -= @s aote_stat_necron_int_prev
