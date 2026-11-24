@@ -3,9 +3,9 @@
   "show_notification": false,
   "category": "equipment",
   "pattern": [
-    "nAn",
-    "N N",
-    "   "
+    " n ",
+    "NAN",
+    " n "
   ],
   "key": {
     "n": [
