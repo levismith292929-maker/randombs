@@ -2,7 +2,7 @@ scoreboard players add @s aote_damage_stat 0
 scoreboard players add @s aote_damage_base 0
 execute unless entity @s[tag=aote_necron_damage_init] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
 tag @s add aote_necron_damage_init
-execute unless items entity @s armor.head minecraft:leather_helmet[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
+execute unless items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
 execute unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
 execute unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
 execute unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players operation @s aote_damage_base = @s aote_damage_stat
