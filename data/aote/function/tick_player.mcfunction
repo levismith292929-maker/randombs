@@ -12,8 +12,45 @@ scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
 execute if score @s aote_damage_diff matches 100.. run function aote:necron_armor/summon
 # One-time migration to the reliable reusable View Stats item.
 execute unless entity @s[tag=aote_view_stats_v2_given] run clear @s minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}]
-execute unless entity @s[tag=aote_view_stats_v2_given] run item replace entity @s hotbar.8 with minecraft:nether_star[minecraft:custom_name={text:'View Stats',italic:false},minecraft:custom_data={aote_view_stats:1b},minecraft:food={nutrition:0,saturation:0.0,can_always_eat:true},minecraft:consumable={consume_seconds:0.05,animation:"eat",sound:"minecraft:entity.generic.eat",has_consume_particles:false},minecraft:use_remainder={id:"minecraft:nether_star",count:1,components:{"minecraft:custom_name":{text:'View Stats',italic:false},"minecraft:custom_data":{aote_view_stats:1b},"minecraft:food":{nutrition:0,saturation:0.0,can_always_eat:true},"minecraft:consumable":{consume_seconds:0.05,animation:"eat",sound:"minecraft:entity.generic.eat",has_consume_particles:false}}}] 1
+execute unless entity @s[tag=aote_view_stats_v2_given] run item replace entity @s hotbar.8 with minecraft:nether_star[minecraft:custom_name={text:'View Stats',italic:false},minecraft:custom_data={aote_view_stats:1b},minecraft:food={nutrition:0,saturation:0.0,can_always_eat:true},minecraft:consumable={consume_seconds:0.05,animation:"eat",sound:"minecraft:entity.generic.eat",has_consume_particles:false}] 1
 tag @s add aote_view_stats_v2_given
+execute if items entity @s hotbar.0 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s hotbar.0 with air
+execute if items entity @s hotbar.1 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s hotbar.1 with air
+execute if items entity @s hotbar.2 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s hotbar.2 with air
+execute if items entity @s hotbar.3 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s hotbar.3 with air
+execute if items entity @s hotbar.4 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s hotbar.4 with air
+execute if items entity @s hotbar.5 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s hotbar.5 with air
+execute if items entity @s hotbar.6 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s hotbar.6 with air
+execute if items entity @s hotbar.7 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s hotbar.7 with air
+execute if items entity @s inventory.0 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.0 with air
+execute if items entity @s inventory.1 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.1 with air
+execute if items entity @s inventory.2 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.2 with air
+execute if items entity @s inventory.3 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.3 with air
+execute if items entity @s inventory.4 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.4 with air
+execute if items entity @s inventory.5 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.5 with air
+execute if items entity @s inventory.6 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.6 with air
+execute if items entity @s inventory.7 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.7 with air
+execute if items entity @s inventory.8 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.8 with air
+execute if items entity @s inventory.9 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.9 with air
+execute if items entity @s inventory.10 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.10 with air
+execute if items entity @s inventory.11 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.11 with air
+execute if items entity @s inventory.12 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.12 with air
+execute if items entity @s inventory.13 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.13 with air
+execute if items entity @s inventory.14 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.14 with air
+execute if items entity @s inventory.15 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.15 with air
+execute if items entity @s inventory.16 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.16 with air
+execute if items entity @s inventory.17 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.17 with air
+execute if items entity @s inventory.18 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.18 with air
+execute if items entity @s inventory.19 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.19 with air
+execute if items entity @s inventory.20 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.20 with air
+execute if items entity @s inventory.21 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.21 with air
+execute if items entity @s inventory.22 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.22 with air
+execute if items entity @s inventory.23 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.23 with air
+execute if items entity @s inventory.24 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.24 with air
+execute if items entity @s inventory.25 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.25 with air
+execute if items entity @s inventory.26 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s inventory.26 with air
+execute if items entity @s weapon.offhand minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s weapon.offhand with air
+execute unless items entity @s hotbar.8 minecraft:nether_star[minecraft:custom_data~{aote_view_stats:1b}] run item replace entity @s hotbar.8 with minecraft:nether_star[minecraft:custom_name={text:'View Stats',italic:false},minecraft:custom_data={aote_view_stats:1b},minecraft:food={nutrition:0,saturation:0.0,can_always_eat:true},minecraft:consumable={consume_seconds:0.05,animation:"eat",sound:"minecraft:entity.generic.eat",has_consume_particles:false}] 1
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:ore_tracker
 recipe give @s aspectoftheend:aote
 recipe give @s aspectoftheend:aotv
