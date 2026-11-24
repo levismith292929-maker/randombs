@@ -22,7 +22,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:diamond_leggings",
+    "id": "minecraft:leather_leggings",
     "count": 1,
     "components": {
       "minecraft:custom_name": {
@@ -52,7 +52,11 @@
           "color": "red",
           "italic": false
         }
-      ]
+      ],
+      "minecraft:dyed_color": {
+        "rgb": 11141290,
+        "show_in_tooltip": false
+      }
     }
   }
 }
