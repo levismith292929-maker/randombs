@@ -13,11 +13,8 @@
     ]
   },
   "result": {
-    "id": "minecraft:netherite_chestplate",
+    "id": "minecraft:leather_chestplate",
     "components": {
-      "minecraft:profile": {
-        "texture": "minecraft:entity/skeleton/wither_skeleton"
-      },
       "minecraft:enchantments": {
         "minecraft:fire_protection": 6,
         "minecraft:protection": 6,
@@ -25,12 +22,10 @@
         "minecraft:feather_falling": 6
       },
       "minecraft:enchantment_glint_override": false,
-      "minecraft:equippable": {
-        "slot": "chest",
-        "asset_id": "minecraft:leather"
+      "minecraft:dyed_color": {
+        "rgb": 15155516,
+        "show_in_tooltip": false
       },
-      "minecraft:dyed_color": 15155516,
-      "item_model": "leather_chestplate",
       "custom_name": {
         "text": "Necron's Chestplate",
         "color": "#ffd000",
@@ -42,22 +37,27 @@
       "minecraft:unbreakable": {},
       "minecraft:lore": [
         {
-          "text": "Health: 221",
+          "text": "Health: 247",
           "color": "red",
           "italic": false
         },
         {
-          "text": "Defense: 70",
+          "text": "Defense: 133",
           "color": "green",
           "italic": false
         },
         {
-          "text": "Strength: 20",
+          "text": "Strength: 38",
           "color": "red",
           "italic": false
         },
         {
-          "text": "Intelligence: 5",
+          "text": "Crit Damage: 29",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Intelligence: 10",
           "color": "aqua",
           "italic": false
         },
@@ -76,7 +76,11 @@
           "color": "blue",
           "italic": false
         }
-      ]
+      ],
+      "minecraft:custom_data": {
+        "item": "necron",
+        "aote_armor_lore": "1b"
+      }
     },
     "count": 1
   }
