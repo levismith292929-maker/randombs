@@ -40,12 +40,12 @@
       "minecraft:enchantment_glint_override": false,
       "minecraft:lore": [
         {
-          "text": "Health: 171",
+          "text": "Health: 500",
           "color": "red",
           "italic": false
         },
         {
-          "text": "Defense: 95",
+          "text": "Defense: 150",
           "color": "green",
           "italic": false
         },
@@ -55,7 +55,7 @@
           "italic": false
         },
         {
-          "text": "Intelligence: 29",
+          "text": "Intelligence: 80",
           "color": "aqua",
           "italic": false
         },
