@@ -12,17 +12,8 @@
     ]
   },
   "result": {
-    "id": "minecraft:wither_skeleton_skull",
+    "id": "minecraft:leather_helmet",
     "components": {
-      "minecraft:attribute_modifiers": [
-        {
-          "type": "minecraft:armor",
-          "id": "1",
-          "amount": 3,
-          "operation": "add_value",
-          "slot": "head"
-        }
-      ],
       "minecraft:enchantments": {
         "minecraft:fire_protection": 6,
         "minecraft:protection": 6,
@@ -41,22 +32,27 @@
       "minecraft:unbreakable": {},
       "minecraft:lore": [
         {
-          "text": "Health: 153",
+          "text": "Health: 171",
           "color": "red",
           "italic": false
         },
         {
-          "text": "Defense: 50",
+          "text": "Defense: 95",
           "color": "green",
           "italic": false
         },
         {
-          "text": "Strength: 20",
+          "text": "Strength: 38",
           "color": "red",
           "italic": false
         },
         {
-          "text": "Intelligence: 15",
+          "text": "Crit Damage: 29",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "Intelligence: 29",
           "color": "aqua",
           "italic": false
         },
@@ -75,7 +71,15 @@
           "color": "blue",
           "italic": false
         }
-      ]
+      ],
+      "minecraft:dyed_color": {
+        "rgb": 15155516,
+        "show_in_tooltip": false
+      },
+      "minecraft:custom_data": {
+        "item": "necron",
+        "aote_armor_lore": "1b"
+      }
     },
     "count": 1
   }
