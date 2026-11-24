@@ -20,6 +20,7 @@ scoreboard players add @s aote_stat_crit_damage 0
 scoreboard players add @s aote_stat_necron_int_prev 0
 scoreboard players add @s aote_stat_necron_int_diff 0
 scoreboard players add @s aote_stat_mana_regen_display 0
+scoreboard players add @s aote_stat_mana_regen_bonus 0
 scoreboard players add @s aote_stat_vanilla_health 0
 execute unless entity @s[tag=aote_stats_init] run scoreboard players set @s aote_stat_health 1000
 execute unless entity @s[tag=aote_stats_init] run scoreboard players set @s aote_stat_max_health 1000
@@ -213,8 +214,11 @@ scoreboard players operation @s aote_stat_necron_int_diff = @s aote_stat_necron_
 scoreboard players operation @s aote_stat_necron_int_diff -= @s aote_stat_necron_int_prev
 scoreboard players operation @s aote_mana_max += @s aote_stat_necron_int_diff
 scoreboard players operation @s aote_stat_necron_int_prev = @s aote_stat_necron_int
+scoreboard players operation @s aote_stat_mana_regen_bonus = @s aote_stat_necron_int
+scoreboard players add @s aote_stat_mana_regen_bonus 2
+scoreboard players operation @s aote_stat_mana_regen_bonus /= #4 aote_stat_const
 scoreboard players operation @s aote_stat_mana_regen_display = @s aote_mana_regen_rate
-execute if score @s aote_stat_necron_int matches 1.. run scoreboard players add @s aote_stat_mana_regen_display 5
+scoreboard players operation @s aote_stat_mana_regen_display += @s aote_stat_mana_regen_bonus
 execute if score @s aote_mana_max matches ..0 run scoreboard players set @s aote_mana_max 1
 # Cancel vanilla unarmed damage; the held sword/axe supplies the custom Damage and Strength attributes.
 attribute @s minecraft:attack_damage base set 0
