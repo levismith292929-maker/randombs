@@ -157,6 +157,12 @@ scoreboard objectives add aote_stat_const dummy
 scoreboard players set #ten aote_stat_const 10
 scoreboard players set #hundred aote_stat_const 100
 scoreboard players set #4 aote_stat_const 4
+scoreboard players set #two aote_stat_const 2
+scoreboard players set #1000 aote_stat_const 1000
+
+scoreboard objectives add aote_ability_base dummy
+scoreboard objectives add aote_ability_damage dummy
+scoreboard objectives add aote_ability_temp dummy
 
 scoreboard objectives add aote_stat_damage_display dummy
 
