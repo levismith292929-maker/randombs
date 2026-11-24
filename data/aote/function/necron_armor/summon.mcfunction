@@ -1,8 +1,8 @@
 advancement revoke @s only aote:necron_armor_hit
-execute unless items entity @s armor.head minecraft:wither_skeleton_skull[minecraft:custom_data~{item:necron}] run return 0
-execute unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run return 0
-execute unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run return 0
-execute unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run return 0
+execute unless items entity @s armor.head minecraft:leather_helmet[minecraft:custom_data~{item:necron}] run return 0
+execute unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run return 0
+execute unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run return 0
+execute unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run return 0
 execute if score @s aote_ncd matches 1.. run return 0
 scoreboard players operation @s aote_damage_diff = @s aote_damage_stat
 scoreboard players operation @s aote_damage_diff -= @s aote_damage_base
