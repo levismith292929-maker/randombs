@@ -1,0 +1,24 @@
+name: Package Datapack
+
+on:
+  push:
+    branches: [ "hypixel-skyblock" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Package datapack
+        run: zip -r randombs-hypixel-skyblock.zip . -x ".git/*" ".github/*"
+      - name: Upload datapack
+        uses: actions/upload-artifact@v4
+        with:
+          name: randombs-hypixel-skyblock
+          path: randombs-hypixel-skyblock.zip
+          if-no-files-found: error
