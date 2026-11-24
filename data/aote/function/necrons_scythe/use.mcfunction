@@ -13,6 +13,10 @@ scoreboard players set @s aote_mana_delay 40
 scoreboard players set @s aote_mana_regen 0
 scoreboard players set @s aote_tcd 15
 
+# Calculate ability damage using Strength, Intelligence, and the active pet.
+scoreboard players set @s aote_ability_base 10000
+function aote:stats/calculate_ability_damage
+
 # Start a straight end-rod slash three blocks ahead.
 kill @e[type=marker,tag=necron_scythe_slash]
 execute anchored eyes positioned ^ ^ ^3 rotated as @s run summon minecraft:marker ~ ~ ~ {Tags:["necron_scythe_slash"]}
@@ -22,13 +26,13 @@ scoreboard players set @e[type=marker,tag=necron_scythe_slash,limit=1,sort=neare
 tag @s add necron_scythe_user
 
 # Scan from the player's body height, not eye height.
-execute anchored eyes positioned ^ ^-0.8 ^0.25 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
-execute anchored eyes positioned ^ ^-0.8 ^0.75 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
-execute anchored eyes positioned ^ ^-0.8 ^1.25 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
-execute anchored eyes positioned ^ ^-0.8 ^1.75 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
-execute anchored eyes positioned ^ ^-0.8 ^2.25 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
-execute anchored eyes positioned ^ ^-0.8 ^2.75 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
-execute anchored eyes positioned ^ ^-0.8 ^3 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit
+execute anchored eyes positioned ^ ^-0.8 ^0.25 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit with storage aote:macro
+execute anchored eyes positioned ^ ^-0.8 ^0.75 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit with storage aote:macro
+execute anchored eyes positioned ^ ^-0.8 ^1.25 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit with storage aote:macro
+execute anchored eyes positioned ^ ^-0.8 ^1.75 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit with storage aote:macro
+execute anchored eyes positioned ^ ^-0.8 ^2.25 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit with storage aote:macro
+execute anchored eyes positioned ^ ^-0.8 ^2.75 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit with storage aote:macro
+execute anchored eyes positioned ^ ^-0.8 ^3 as @e[distance=..1.5,tag=!necron_scythe_user,tag=!necron_scythe_hit] run function aote:necrons_scythe/hit with storage aote:macro
 tag @e[tag=necron_scythe_hit] remove necron_scythe_hit
 tag @s remove necron_scythe_user
 playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 0.8
