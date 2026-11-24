@@ -3,18 +3,18 @@
   "show_notification": false,
   "category": "equipment",
   "pattern": [
-    " n ",
-    "NAN",
-    " n "
+    "fnf",
+    "nan",
+    "fnf"
   ],
   "key": {
+    "f": [
+      "hypixel:superior_dragon_fragment"
+    ],
     "n": [
       "minecraft:netherite_scrap"
     ],
-    "N": [
-      "hypixel:necron_core"
-    ],
-    "A": [
+    "a": [
       "minecraft:netherite_helmet"
     ]
   },
