@@ -121,7 +121,7 @@ execute if items entity @s armor.head minecraft:chainmail_helmet run scoreboard 
 execute if items entity @s armor.head minecraft:iron_helmet run scoreboard players add @s aote_stat_defense 13
 execute if items entity @s armor.head minecraft:diamond_helmet unless items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 17
 execute if items entity @s armor.head minecraft:netherite_helmet unless items entity @s armor.head minecraft:wither_skeleton_skull[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 23
-execute if items entity @s armor.chest minecraft:leather_chestplate unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 10
+execute if items entity @s armor.chest minecraft:leather_chestplate unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{dragon_armor:"1b"}] unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 10
 execute if items entity @s armor.chest minecraft:copper_chestplate run scoreboard players add @s aote_stat_defense 17
 execute if items entity @s armor.chest minecraft:golden_chestplate run scoreboard players add @s aote_stat_defense 18
 execute if items entity @s armor.chest minecraft:chainmail_chestplate run scoreboard players add @s aote_stat_defense 19
@@ -129,7 +129,7 @@ execute if items entity @s armor.chest minecraft:chainmail_chestplate run scoreb
 execute if items entity @s armor.chest minecraft:iron_chestplate run scoreboard players add @s aote_stat_defense 21
 execute if items entity @s armor.chest minecraft:diamond_chestplate unless items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 30
 execute if items entity @s armor.chest minecraft:netherite_chestplate unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 36
-execute if items entity @s armor.legs minecraft:leather_leggings unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 7
+execute if items entity @s armor.legs minecraft:leather_leggings unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{dragon_armor:"1b"}] unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 7
 execute if items entity @s armor.legs minecraft:copper_leggings run scoreboard players add @s aote_stat_defense 14
 execute if items entity @s armor.legs minecraft:golden_leggings run scoreboard players add @s aote_stat_defense 15
 execute if items entity @s armor.legs minecraft:chainmail_leggings run scoreboard players add @s aote_stat_defense 16
@@ -137,7 +137,7 @@ execute if items entity @s armor.legs minecraft:chainmail_leggings run scoreboar
 execute if items entity @s armor.legs minecraft:iron_leggings run scoreboard players add @s aote_stat_defense 18
 execute if items entity @s armor.legs minecraft:diamond_leggings unless items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 24
 execute if items entity @s armor.legs minecraft:netherite_leggings unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 30
-execute if items entity @s armor.feet minecraft:leather_boots unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 3
+execute if items entity @s armor.feet minecraft:leather_boots unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{dragon_armor:"1b"}] unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 3
 execute if items entity @s armor.feet minecraft:copper_boots run scoreboard players add @s aote_stat_defense 6
 execute if items entity @s armor.feet minecraft:golden_boots run scoreboard players add @s aote_stat_defense 7
 execute if items entity @s armor.feet minecraft:chainmail_boots run scoreboard players add @s aote_stat_defense 8
