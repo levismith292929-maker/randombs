@@ -32,6 +32,35 @@ execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoft
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:iron_golem_pet
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:pet_remover
 execute unless entity @s[tag=aote_recipes_unlocked] run recipe give @s aspectoftheend:zombie_sword
+# Unlock every Dragon Armor recipe directly from the datapack.
+recipe give @s hypixelrecipes:old_dragon_helmet
+recipe give @s hypixelrecipes:old_dragon_chestplate
+recipe give @s hypixelrecipes:old_dragon_leggings
+recipe give @s hypixelrecipes:old_dragon_boots
+recipe give @s hypixelrecipes:protector_dragon_helmet
+recipe give @s hypixelrecipes:protector_dragon_chestplate
+recipe give @s hypixelrecipes:protector_dragon_leggings
+recipe give @s hypixelrecipes:protector_dragon_boots
+recipe give @s hypixelrecipes:wise_dragon_helmet
+recipe give @s hypixelrecipes:wise_dragon_chestplate
+recipe give @s hypixelrecipes:wise_dragon_leggings
+recipe give @s hypixelrecipes:wise_dragon_boots
+recipe give @s hypixelrecipes:young_dragon_helmet
+recipe give @s hypixelrecipes:young_dragon_chestplate
+recipe give @s hypixelrecipes:young_dragon_leggings
+recipe give @s hypixelrecipes:young_dragon_boots
+recipe give @s hypixelrecipes:strong_dragon_helmet
+recipe give @s hypixelrecipes:strong_dragon_chestplate
+recipe give @s hypixelrecipes:strong_dragon_leggings
+recipe give @s hypixelrecipes:strong_dragon_boots
+recipe give @s hypixelrecipes:unstable_dragon_helmet
+recipe give @s hypixelrecipes:unstable_dragon_chestplate
+recipe give @s hypixelrecipes:unstable_dragon_leggings
+recipe give @s hypixelrecipes:unstable_dragon_boots
+recipe give @s hypixelrecipes:superior_dragon_helmet
+recipe give @s hypixelrecipes:superior_dragon_chestplate
+recipe give @s hypixelrecipes:superior_dragon_leggings
+recipe give @s hypixelrecipes:superior_dragon_boots
 tag @s add aote_recipes_unlocked
 scoreboard players add #aote_uid_counter aote_uid 0
 execute unless score @s aote_uid matches 1.. run scoreboard players add #aote_uid_counter aote_uid 1
