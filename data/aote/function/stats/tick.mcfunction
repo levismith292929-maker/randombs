@@ -35,34 +35,34 @@ scoreboard players add @s aote_stat_armor_health 0
 scoreboard players add @s aote_stat_armor_health_prev 0
 scoreboard players add @s aote_stat_armor_health_diff 0
 scoreboard players set @s aote_stat_armor_health 0
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:old_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 390
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:old_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 640
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:old_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 560
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:old_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 340
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:protector_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:protector_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:protector_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:protector_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:wise_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:wise_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:wise_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:wise_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:young_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:young_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:young_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:young_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:strong_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:strong_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:strong_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:strong_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:unstable_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:unstable_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:unstable_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:unstable_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:superior_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 390
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:superior_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 640
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:superior_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 560
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 340
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:old_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 390
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:old_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 640
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:old_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 560
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:old_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 340
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:protector_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:protector_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:protector_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:protector_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:wise_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:wise_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:wise_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:wise_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:young_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:young_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:young_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:young_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:strong_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:strong_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:strong_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:strong_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:unstable_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 300
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:unstable_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 510
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:unstable_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 430
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:unstable_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 260
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:superior_dragon_helmet}] run scoreboard players add @s aote_stat_armor_health 390
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:superior_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_health 640
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:superior_dragon_leggings}] run scoreboard players add @s aote_stat_armor_health 560
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_armor_health 340
 scoreboard players operation @s aote_stat_armor_health_diff = @s aote_stat_armor_health
 scoreboard players operation @s aote_stat_armor_health_diff -= @s aote_stat_armor_health_prev
 scoreboard players operation @s aote_stat_max_health += @s aote_stat_armor_health_diff
@@ -114,7 +114,7 @@ execute if items entity @s armor.head minecraft:chainmail_helmet run scoreboard 
 execute if items entity @s armor.head minecraft:iron_helmet run scoreboard players add @s aote_stat_defense 13
 execute if items entity @s armor.head minecraft:diamond_helmet unless items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 17
 execute if items entity @s armor.head minecraft:netherite_helmet unless items entity @s armor.head minecraft:wither_skeleton_skull[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 23
-execute if items entity @s armor.chest minecraft:leather_chestplate run scoreboard players add @s aote_stat_defense 10
+execute if items entity @s armor.chest minecraft:leather_chestplate unless items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 10
 execute if items entity @s armor.chest minecraft:copper_chestplate run scoreboard players add @s aote_stat_defense 17
 execute if items entity @s armor.chest minecraft:golden_chestplate run scoreboard players add @s aote_stat_defense 18
 execute if items entity @s armor.chest minecraft:chainmail_chestplate run scoreboard players add @s aote_stat_defense 19
@@ -122,7 +122,7 @@ execute if items entity @s armor.chest minecraft:chainmail_chestplate run scoreb
 execute if items entity @s armor.chest minecraft:iron_chestplate run scoreboard players add @s aote_stat_defense 21
 execute if items entity @s armor.chest minecraft:diamond_chestplate unless items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 30
 execute if items entity @s armor.chest minecraft:netherite_chestplate unless items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 36
-execute if items entity @s armor.legs minecraft:leather_leggings run scoreboard players add @s aote_stat_defense 7
+execute if items entity @s armor.legs minecraft:leather_leggings unless items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 7
 execute if items entity @s armor.legs minecraft:copper_leggings run scoreboard players add @s aote_stat_defense 14
 execute if items entity @s armor.legs minecraft:golden_leggings run scoreboard players add @s aote_stat_defense 15
 execute if items entity @s armor.legs minecraft:chainmail_leggings run scoreboard players add @s aote_stat_defense 16
@@ -130,7 +130,7 @@ execute if items entity @s armor.legs minecraft:chainmail_leggings run scoreboar
 execute if items entity @s armor.legs minecraft:iron_leggings run scoreboard players add @s aote_stat_defense 18
 execute if items entity @s armor.legs minecraft:diamond_leggings unless items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 24
 execute if items entity @s armor.legs minecraft:netherite_leggings unless items entity @s armor.legs minecraft:netherite_leggings[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 30
-execute if items entity @s armor.feet minecraft:leather_boots run scoreboard players add @s aote_stat_defense 3
+execute if items entity @s armor.feet minecraft:leather_boots unless items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 3
 execute if items entity @s armor.feet minecraft:copper_boots run scoreboard players add @s aote_stat_defense 6
 execute if items entity @s armor.feet minecraft:golden_boots run scoreboard players add @s aote_stat_defense 7
 execute if items entity @s armor.feet minecraft:chainmail_boots run scoreboard players add @s aote_stat_defense 8
@@ -139,51 +139,51 @@ execute if items entity @s armor.feet minecraft:iron_boots run scoreboard player
 execute if items entity @s armor.feet minecraft:diamond_boots unless items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{dragon_armor:"1b"}] run scoreboard players add @s aote_stat_defense 13
 execute if items entity @s armor.feet minecraft:netherite_boots unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 19
 # Dragon armor stats.
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:old_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:old_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:old_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:old_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:protector_dragon_helmet}] run scoreboard players add @s aote_stat_defense 135
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:protector_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 185
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:protector_dragon_leggings}] run scoreboard players add @s aote_stat_defense 165
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:protector_dragon_boots}] run scoreboard players add @s aote_stat_defense 115
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:wise_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:wise_dragon_helmet}] run scoreboard players add @s aote_stat_necron_int 125
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:wise_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:wise_dragon_chestplate}] run scoreboard players add @s aote_stat_necron_int 75
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:wise_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:wise_dragon_leggings}] run scoreboard players add @s aote_stat_necron_int 75
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:wise_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:wise_dragon_boots}] run scoreboard players add @s aote_stat_necron_int 75
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:young_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:young_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:young_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:young_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:strong_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:strong_dragon_helmet}] run scoreboard players add @s aote_stat_armor_strength 25
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:strong_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:strong_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_strength 25
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:strong_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:strong_dragon_leggings}] run scoreboard players add @s aote_stat_armor_strength 25
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:strong_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:strong_dragon_boots}] run scoreboard players add @s aote_stat_armor_strength 25
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:unstable_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:unstable_dragon_helmet}] run scoreboard players add @s aote_stat_necron_int 25
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:unstable_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:unstable_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:unstable_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:superior_dragon_helmet}] run scoreboard players add @s aote_stat_defense 130
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:superior_dragon_helmet}] run scoreboard players add @s aote_stat_armor_strength 10
-execute if items entity @s armor.head minecraft:diamond_helmet[minecraft:custom_data~{item:superior_dragon_helmet}] run scoreboard players add @s aote_stat_necron_int 25
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:superior_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 190
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:superior_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_strength 10
-execute if items entity @s armor.chest minecraft:diamond_chestplate[minecraft:custom_data~{item:superior_dragon_chestplate}] run scoreboard players add @s aote_stat_necron_int 25
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:superior_dragon_leggings}] run scoreboard players add @s aote_stat_defense 170
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:superior_dragon_leggings}] run scoreboard players add @s aote_stat_armor_strength 10
-execute if items entity @s armor.legs minecraft:diamond_leggings[minecraft:custom_data~{item:superior_dragon_leggings}] run scoreboard players add @s aote_stat_necron_int 25
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_defense 110
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_armor_strength 10
-execute if items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_necron_int 25
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:old_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:old_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:old_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:old_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:protector_dragon_helmet}] run scoreboard players add @s aote_stat_defense 135
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:protector_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 185
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:protector_dragon_leggings}] run scoreboard players add @s aote_stat_defense 165
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:protector_dragon_boots}] run scoreboard players add @s aote_stat_defense 115
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:wise_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:wise_dragon_helmet}] run scoreboard players add @s aote_stat_necron_int 125
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:wise_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:wise_dragon_chestplate}] run scoreboard players add @s aote_stat_necron_int 75
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:wise_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:wise_dragon_leggings}] run scoreboard players add @s aote_stat_necron_int 75
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:wise_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:wise_dragon_boots}] run scoreboard players add @s aote_stat_necron_int 75
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:young_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:young_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:young_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:young_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:strong_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:strong_dragon_helmet}] run scoreboard players add @s aote_stat_armor_strength 25
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:strong_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:strong_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_strength 25
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:strong_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:strong_dragon_leggings}] run scoreboard players add @s aote_stat_armor_strength 25
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:strong_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:strong_dragon_boots}] run scoreboard players add @s aote_stat_armor_strength 25
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:unstable_dragon_helmet}] run scoreboard players add @s aote_stat_defense 110
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:unstable_dragon_helmet}] run scoreboard players add @s aote_stat_necron_int 25
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:unstable_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 160
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:unstable_dragon_leggings}] run scoreboard players add @s aote_stat_defense 140
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:unstable_dragon_boots}] run scoreboard players add @s aote_stat_defense 90
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:superior_dragon_helmet}] run scoreboard players add @s aote_stat_defense 130
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:superior_dragon_helmet}] run scoreboard players add @s aote_stat_armor_strength 10
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:superior_dragon_helmet}] run scoreboard players add @s aote_stat_necron_int 25
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:superior_dragon_chestplate}] run scoreboard players add @s aote_stat_defense 190
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:superior_dragon_chestplate}] run scoreboard players add @s aote_stat_armor_strength 10
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:superior_dragon_chestplate}] run scoreboard players add @s aote_stat_necron_int 25
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:superior_dragon_leggings}] run scoreboard players add @s aote_stat_defense 170
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:superior_dragon_leggings}] run scoreboard players add @s aote_stat_armor_strength 10
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:superior_dragon_leggings}] run scoreboard players add @s aote_stat_necron_int 25
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_defense 110
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_armor_strength 10
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:superior_dragon_boots}] run scoreboard players add @s aote_stat_necron_int 25
 # Necron armor bonuses: half of Hypixel's base piece stats.
 execute if items entity @s armor.head minecraft:wither_skeleton_skull[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 50
 execute if items entity @s armor.chest minecraft:netherite_chestplate[minecraft:custom_data~{item:necron}] run scoreboard players add @s aote_stat_defense 70
