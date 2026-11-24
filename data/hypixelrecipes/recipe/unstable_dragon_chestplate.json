@@ -48,9 +48,11 @@
           "italic": false
         }
       ],
-      "minecraft:dyed_color": {
-        "rgb": 5570634,
-        "show_in_tooltip": false
+      "minecraft:dyed_color": 5570634,
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:unbreakable"
+        ]
       }
     }
   }
