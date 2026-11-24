@@ -41,12 +41,12 @@
       "minecraft:dyed_color": 15167036,
       "minecraft:lore": [
         {
-          "text": "Health: 138",
+          "text": "Health: 350",
           "color": "red",
           "italic": false
         },
         {
-          "text": "Defense: 81",
+          "text": "Defense: 125",
           "color": "green",
           "italic": false
         },
@@ -56,7 +56,7 @@
           "italic": false
         },
         {
-          "text": "Intelligence: 9",
+          "text": "Intelligence: 80",
           "color": "aqua",
           "italic": false
         },
