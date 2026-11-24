@@ -18,7 +18,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:diamond_boots",
+    "id": "minecraft:leather_boots",
     "count": 1,
     "components": {
       "minecraft:custom_name": {
@@ -48,7 +48,11 @@
           "color": "aqua",
           "italic": false
         }
-      ]
+      ],
+      "minecraft:dyed_color": {
+        "rgb": 5636095,
+        "show_in_tooltip": false
+      }
     }
   }
 }
