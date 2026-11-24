@@ -13,4 +13,7 @@ scoreboard players operation @s aote_ability_temp = #hundred aote_stat_const
 scoreboard players operation @s aote_ability_temp += @s aote_damage_bonus
 scoreboard players operation @s aote_ability_damage *= @s aote_ability_temp
 scoreboard players operation @s aote_ability_damage /= #hundred aote_stat_const
-execute store result storage aote:macro damage double 0.001 run scoreboard players get @s aote_ability_damage
+# Round to the nearest whole damage point, matching the agreed formula.
+scoreboard players add @s aote_ability_damage 500
+scoreboard players operation @s aote_ability_damage /= #1000 aote_stat_const
+execute store result storage aote:macro damage double 1 run scoreboard players get @s aote_ability_damage
