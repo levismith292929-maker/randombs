@@ -3,11 +3,14 @@
   "show_notification": true,
   "category": "equipment",
   "pattern": [
-    " N ",
-    "NAN",
-    " N "
+    "nAn",
+    "N N",
+    "   "
   ],
   "key": {
+    "n": [
+      "minecraft:netherite_scrap"
+    ],
     "N": [
       "hypixel:necron_core"
     ],
