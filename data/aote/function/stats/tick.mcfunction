@@ -216,6 +216,14 @@ execute if items entity @s armor.feet minecraft:iron_boots unless items entity @
 execute if items entity @s armor.feet minecraft:diamond_boots unless items entity @s armor.feet minecraft:diamond_boots[minecraft:custom_data~{aote_armor_lore:"1b"}] run item modify entity @s armor.feet aote:armor/diamond_boots
 execute if items entity @s armor.feet minecraft:netherite_boots unless items entity @s armor.feet minecraft:netherite_boots[minecraft:custom_data~{aote_armor_lore:"1b"}] run item modify entity @s armor.feet aote:armor/netherite_boots
 scoreboard players set @s aote_stat_defense 0
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:unstable_dragon_helmet}] run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.head minecraft:player_head[minecraft:custom_data~{item:unstable_dragon_helmet}] run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:unstable_dragon_chestplate}] run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.chest minecraft:leather_chestplate[minecraft:custom_data~{item:unstable_dragon_chestplate}] run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:unstable_dragon_leggings}] run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.legs minecraft:leather_leggings[minecraft:custom_data~{item:unstable_dragon_leggings}] run scoreboard players add @s aote_stat_crit_damage 4
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:unstable_dragon_boots}] run scoreboard players add @s aote_stat_crit_chance 4
+execute if items entity @s armor.feet minecraft:leather_boots[minecraft:custom_data~{item:unstable_dragon_boots}] run scoreboard players add @s aote_stat_crit_damage 4
 execute if items entity @s armor.head hypixel:unstable_dragon_helmet run scoreboard players add @s aote_stat_crit_chance 4
 execute if items entity @s armor.head hypixel:unstable_dragon_helmet run scoreboard players add @s aote_stat_crit_damage 4
 execute if items entity @s armor.head hypixel:unstable_dragon_helmet_1star run scoreboard players add @s aote_stat_crit_chance 4
