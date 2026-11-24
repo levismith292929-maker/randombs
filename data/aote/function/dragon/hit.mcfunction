@@ -1,6 +1,3 @@
 tag @s add aote_hit
-execute if score @e[type=marker,tag=aote_breath,sort=nearest,limit=1] aote_damage_bonus matches 40 run damage @s 25.2 minecraft:dragon_breath
-execute if score @e[type=marker,tag=aote_breath,sort=nearest,limit=1] aote_damage_bonus matches 15 run damage @s 20.7 minecraft:dragon_breath
-execute if score @e[type=marker,tag=aote_breath,sort=nearest,limit=1] aote_damage_bonus matches 5 run damage @s 18.9 minecraft:dragon_breath
-execute if score @e[type=marker,tag=aote_breath,sort=nearest,limit=1] aote_damage_bonus matches -20 run damage @s 14.4 minecraft:dragon_breath
-execute unless score @e[type=marker,tag=aote_breath,sort=nearest,limit=1] aote_damage_bonus matches -20 unless score @e[type=marker,tag=aote_breath,sort=nearest,limit=1] aote_damage_bonus matches 5 unless score @e[type=marker,tag=aote_breath,sort=nearest,limit=1] aote_damage_bonus matches 15 unless score @e[type=marker,tag=aote_breath,sort=nearest,limit=1] aote_damage_bonus matches 40 run damage @s 18 minecraft:dragon_breath
+execute store result storage aote:macro damage double 0.001 run scoreboard players get @e[type=marker,tag=aote_breath,sort=nearest,limit=1] aote_ability_damage
+function aote:dragon/deal_damage with storage aote:macro
