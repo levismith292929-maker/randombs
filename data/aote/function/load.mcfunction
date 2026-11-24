@@ -142,6 +142,9 @@ scoreboard objectives add aote_stat_deaths minecraft.custom:minecraft.deaths
 scoreboard objectives add aote_stat_deaths_base dummy
 scoreboard objectives add aote_stat_health dummy
 scoreboard objectives add aote_stat_max_health dummy
+scoreboard objectives add aote_stat_armor_health dummy
+scoreboard objectives add aote_stat_armor_health_prev dummy
+scoreboard objectives add aote_stat_armor_health_diff dummy
 scoreboard objectives add aote_stat_strength dummy
 scoreboard objectives add aote_stat_armor_strength dummy
 scoreboard objectives add aote_stat_defense dummy
