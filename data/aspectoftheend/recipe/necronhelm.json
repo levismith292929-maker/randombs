@@ -19,7 +19,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:leather_helmet",
+    "id": "minecraft:player_head",
     "count": 1,
     "components": {
       "minecraft:custom_name": {
@@ -38,7 +38,6 @@
         ]
       },
       "minecraft:enchantment_glint_override": false,
-      "minecraft:dyed_color": 15155516,
       "minecraft:lore": [
         {
           "text": "Health: 171",
@@ -75,7 +74,15 @@
           "color": "blue",
           "italic": false
         }
-      ]
+      ],
+      "minecraft:profile": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "ewogICJ0aW1lc3RhbXAiIDogMTYwNTYyMzI0OTc5MywKICAicHJvZmlsZUlkIiA6ICIwNjEzY2I1Y2QxYjg0M2JjYjI4OTk1NWU4N2QzMGEyYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJicmVhZGxvYWZzcyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yYmJiMmZhN2E2Y2EwODcyODBlYTBjYjU2NGI0MWVmMWFlNDA0YTE5ZjdhODEyOGQzZDI4YzUxOWE4NWUwNjNmIgogICAgfQogIH0KfQ=="
+          }
+        ]
+      }
     }
   }
 }
