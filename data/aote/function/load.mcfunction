@@ -165,3 +165,4 @@ scoreboard objectives add aote_stat_crit_damage dummy
 scoreboard objectives add aote_stat_necron_int_prev dummy
 scoreboard objectives add aote_stat_necron_int_diff dummy
 scoreboard objectives add aote_stat_mana_regen_display dummy
+scoreboard objectives add aote_stat_mana_regen_bonus dummy
